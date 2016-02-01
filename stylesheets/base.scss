@@ -1,36 +1,43 @@
-
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
         
-         /* Sticky footer styles
-        -------------------------------------------------- */
-        html {
-          position: relative;
-          min-height: 100%;
-        }
-        .btn-primary {
-            background-color: #252525;
-        }
-        body {
-          /* Margin bottom by footer height */
-          margin-bottom: 40px;
-          font-family: 'Open Sans', sans-serif;
-          overflow-x: hidden;
-          background-color: #F1F3F1;
-        }
-        h5{
-            font-family: 'Open Sans', sans-serif;
-        }
-        strong{
-            font-family: 'Open Sans', sans-serif;
-        }
-        .box{
-            border: 2px #BBB solid
-        }
-        .footer {
-          overflow: hidden;
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          /* Set the fixed height of the footer here */
-          height: 40px;
-          background-color: #252525;
-        }
+ /* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+.btn-primary {
+    background-color: #252525;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: #F1F3F1;
+}
+h5{
+    font-family: 'Open Sans', sans-serif;
+}
+strong{
+    font-family: 'Open Sans', sans-serif;
+}
+.box{
+    border: 2px #BBB solid
+}
+.footer {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #252525;
+}

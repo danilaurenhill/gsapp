@@ -15,7 +15,6 @@
 </head>
 <body ng-app="mainApp">
   <div ng-controller="homeCtrl">
-   <!-- Navbar -->
     <div class="nav">
       <div class="navbar">
         <h3>GSAPP - Spring 2016</h3>
@@ -23,16 +22,17 @@
     </div>
     <div class="container">
       <div class="row">
-      <!--   <div class="col-sm-1 col-md-1"></div>
+        <div class="search-wrapper">
+            <input type="text" class="form-control ng-pristine ng-valid ng-touched" ng-    model="searchText" placeholder="Search anything..">
+        </div>
+        <!-- <div class="col-sm-1 col-md-1"></div>
         <div class="col-xs-8 col-sm-10 col-md-10">
           <div ng-view="">
           </div>
         </div>
         <div class="col-sm-1 col-md-1"></div> -->
-        <div class="search-wrapper">
-            <input type="text" class="form-control ng-pristine ng-valid ng-touched" ng-    model="searchText" placeholder="Search anything..">
-        </div>
       </div>
+      <h2>Architecture</h2>
     </div>
   </div>
   <footer class="footer" style="background-color:#222;">
