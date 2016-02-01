@@ -38,4 +38,19 @@ strong {
   height: 40px;
   background-color: #252525; }
 
+.nav {
+  background-color: #FFF;
+  left: 0;
+  right: 0;
+  position: fixed; }
+
+/*.navbar-default {
+    background-color: #fff;
+    border-color: #e7e7e7;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}*/
+
 /*# sourceMappingURL=style.css.map */

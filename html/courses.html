@@ -1,0 +1,184 @@
+<style>
+    .sectionTitle {
+    font-weight: 100;
+    text-align: left;
+    border-bottom: 2px solid #0A0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  .courserow {
+        font-size:10px;
+        background:#FFF;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+  .courserow:hover {
+        background: #FFF;
+        text-decoration:none;
+        box-shadow: 0px 0px 10px #888888;
+        border-left: 3px solid #123;
+    }
+    .details {
+        font-size:9px;
+        /* Light Version 
+        border-top : 1px solid #DDD;
+        background: #FAFAFA;
+        */
+        /* Dark Version */
+        background:#222;
+        color: #EEE;
+        text-decoration:none;
+        max-height: 300px;
+        overflow-y: hidden;
+    }
+    .details a,h6 {
+        text-decoration:none;
+        color: #A4C5A1;
+    }
+    .prof {
+        font-size: bold;
+    }
+    .glyphicon.glyphicon-collapse-down {
+        font-size: 25px;
+    }
+    .glyphicon.glyphicon-collapse-up{
+        font-size: 25px;
+    }
+</style>
+<!-- 
+<h4>Courses</h4>
+-->
+<!-- Search bar -->
+
+
+<!-- Course List Based on categories -->
+
+<!-- For each Category -->
+
+<!-- for each course in category -->
+<div class="col-sm-12">
+    <input type="text" class="form-control" ng-model="searchText" placeholder="Search anything.."/><br/>
+</div>
+
+<div ng-repeat="category in courseTypes">
+    <h4>{{category.name}}</h4><hr/>
+    <div class="col-sm-12">
+        <Strong>
+                <div class="col-xs-1" align="center"></div>
+                <div class="col-xs-1">Course</div>
+                <div class="col-xs-2">Title</div>
+                <div class="col-xs-2">Instructor</div>
+                <div class="col-xs-2">Req</div>
+                <div class="col-xs-2">Location & Time</div>
+                <div class="col-xs-2">
+                    <div class="col-xs-9">Session & Points</div>
+                    <div class="col-xs-3">Call No</div>
+                </div>
+                <!--
+                <div class="col-xs-1">Call No</div>
+                -->
+            </Strong>
+        <br/>
+    </div>
+    <hr/>
+    <div class="col-sm-12 courserow" ng-repeat= "course in courses | filter : {type : category.code} | filter : searchText | orderBy : 'c_id'">
+        
+        <div ng-click="toggleCourseDetails(course.call_num)" class="row">
+            <div class="col-xs-12"><br/></div>
+            <!-- Design 1 -->
+            <div class="col-xs-1"  align="center">
+                <span class="glyphicon glyphicon-collapse-down" aria-hidden="true" ng-hide="isVisibleCourseDetails(course.call_num)"></span>
+                <span class="glyphicon glyphicon-collapse-up" aria-hidden="true" ng-show="isVisibleCourseDetails(course.call_num)"></span></div>
+            <div class="col-xs-1">{{course.c_id}}</div>
+            <div class="col-xs-2">{{course.c_title + ' - ' + ('00'+course.section).slice(-3)}}</div>
+            <div class="col-xs-2 prof">{{faculty[course.f1_id].f_name}}{{(faculty[course.f2_id]!= null) &&  (', '+faculty[course.f2_id].f_name) || ''}}</div>
+            <div class="col-xs-2">{{course.require}}</div>
+            <div class="col-xs-2">
+                {{course.location}}<br/>
+                {{course.schedule}}
+            </div>
+            <div class="col-xs-2">
+                <div class="col-xs-8">
+                    {{course.session}}<br/>
+                    {{course.points}} Points<br/>
+                </div>
+                <div class="col-xs-4">
+                    {{course.call_num}}
+                </div>
+            </div>
+            
+            <!--
+            <div class="col-xs-1">{{course.call_num}}</div>
+            -->
+            <!-- Design 2 - New Design (div fashion) -->
+            <div class="col-xs-12"><br/></div>
+        </div>
+        
+        <!-- COURSE DETAIL - to be shown only when the course is clicked -->
+        <div class="row details" ng-show="isVisibleCourseDetails(course.call_num)">
+            <div class="col-sm-12">
+            
+                <div class="col-sm-4">
+                    <!-- All Previous Syllabus -->
+                    <h5>Available Syllabi</h5>
+                    <h6>
+                        <a href = "http://www.columbia.edu/cu/bulletin/uwb/subj/{{category.subject+'/'+course.c_id.slice(-5).toUpperCase()+'-'+course.year+course.semester+'-'+('00'+course.section).slice(-3)}}" target="_blank">
+                        Bulletin Page</a>
+                    </h6>
+                    <h6>
+                        <a href = "https://courseworks.columbia.edu/public/{{category.subject+course.c_id.slice(-5).toUpperCase()+'_'+('00'+course.section).slice(-3)+'_'+course.year+'_'+course.semester+'/'}}" target="_blank">
+                        Courseworks(Syllabus)</a>
+                    </h6>
+                    <!--
+                    <div ng-repeat = "(f_id,fac) in syllabusMap[course.c_id]" style="font-size:10px;height=100px;scroll:true;">
+                        <div ng-repeat="syl in fac | filter : {section : course.section}">
+                            <a href="../syllabi2/{{syl.c_id+'/'+syl.year+'/'+syl.semester+'/'+('00'+syl.section).slice(-3)+'/'+syl.s_title}}" target="_blank">{{syl.year+' '+getSemester(syl.semester) + ' ' + faculty[f_id].f_name}}</a>
+                        </div>
+                    </div>
+                    -->
+                    <!-- Rewritting to provide the sorting feature
+                        converting list of objects of list of objects to just list of objects.. Yeah its complicated.. :P -->
+                    <div ng-repeat = "syl in getAllSyl(syllabusMap[course.c_id], course.section) | filter : {section : course.section} | orderBy : '-year'" style="font-size:10px;height=100px;scroll:true;">
+                        <a href="../syllabi2/{{syl.c_id+'/'+syl.year+'/'+syl.semester+'/'+('00'+syl.section).slice(-3)+'/'+syl.s_title}}" target="_blank">{{syl.year+' '+getSemester(syl.semester) + ' ' + faculty[syl.f_id].f_name}}</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!-- Previous Syllabus by the instructor -->
+                    <h5>Instructor's Previous Syllabus</h5>
+                    <h6 ng-hide="syllabusMap[course.c_id][course.f1_id].length">No Prev Syllabi..</h6>
+                    <div ng-repeat="syl in syllabusMap[course.c_id][course.f1_id]" style="font-size:10px;">
+                        <a href="../syllabi2/{{syl.c_id+'/'+syl.year+'/'+syl.semester+'/'+('00'+syl.section).slice(-3)+'/'+syl.s_title}}" target="_blank">{{syl.year+' '+getSemester(syl.semester)}}</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!-- Previous Syllabus by the instructor -->
+                    <h5>Images</h5>
+                    <h6 ng-hide="imageMap[course.c_id][course.f1_id].length">No Images..</h6>
+                    <div ng-repeat="img in imageMap[course.c_id][course.f1_id]" style="font-size:10px;">
+                        <a href="../images2/{{img.c_id+'/'+img.year+'/'+img.semester+'/'+('00'+img.section).slice(-3)+'/'+img.img_title}}" target="_blank">{{img.img_title.split('_').splice(4).join(' ')}}</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-12">
+                <br/>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+<!--        
+<table class="table table-hover">
+    <tbody ng-repeat= "course in courses">
+        <tr>
+            <td>{{course.c_id}}</td>
+            <td>{{faculty[course.f1_id].f_name}}</td>
+        </tr>
+        <tr ng-show=true>
+          <td width="100%"><h3>sadasdas</h3></td>
+        </tr>
+  </tbody>
+    
+</table>
+-->

@@ -1,20 +1,28 @@
-<head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GSAPP</title>
+    <link href="./stylesheets/style.css" rel="stylesheet">
+    <link
+    href='http://fonts.googleapis.com/css?family=Roboto:900,500,400,300,100' rel='stylesheet' type='text/css'>
+  </head>
   <title>GSAPP - Spring 2016</title>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="./stylesheets/style.css" rel="stylesheet">
     <!-- Site originally developed and designed by Ranjith Kumar (@ranji2612) & Ziang Jha -->
+    <!-- Updated by Danielle Hill (danilaurenhill) -->
 </head>
 <body ng-app="mainApp">
   <div ng-controller="homeCtrl">
    <!-- Navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" style="background-color:#FFF;">
-      <div class="container" >
-        <div class="navbar-headr" >
-          <strong><h3>GSAPP - Spring 2016</h3></strong><br/>
-        </div>
+    <div class="nav">
+      <div class="navbar" >
+        <strong><h3>GSAPP - Spring 2016</h3></strong><br/>
       </div>
+    </div>
+    <div class="col-sm-12 ng-scope">
+      <input type="text" class="form-control ng-pristine ng-valid ng-touched" ng-model="searchText" placeholder="Search anything..">
     </div>
     <div class="container" >
       <br/><br/><br/><br/><br/>
@@ -47,6 +55,5 @@
     <!-- Angular Scripts -->
     <script src="scripts/app.js" ></script>
     <script src="scripts/courseCtrl.js" ></script>
-  
-</body>
+  </body>
 </html>
