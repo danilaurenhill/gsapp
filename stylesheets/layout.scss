@@ -17,29 +17,45 @@
   position: relative;
   top: 130px;
   background-color: #fff;
-  width: 101%;
+  width: 104%;
   height: 70px;
   .course-num {
     position: relative;
-    left: 60px;
     top: -30px;
+    left: 80px;
   }
   .title {
-
+    position: relative;
+    top: -54px;
+    left: 155px;
+    width: 120px;
   }
-  .intructor {
-  
+  .instructor {
+    position: relative;
+    top: -92px;
+    left: 307px;
   }
   .requirements {
-
+    position: relative;
+    top: -114px;
+    left: 449px;
+    width: 120px;
   }
   .loc-time {
-
+    position: relative;
+    top: -153px;
+    left: 614px;
+    width: 120px;
   }
   .sess-points {
-
+    position: relative;
+    top: -195px;
+    left: 780px;
+    width: 60px;
   }
   .call-num {
-
+    position: relative;
+    top: -246px;
+    left: 865px;
   }
 }

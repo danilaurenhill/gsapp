@@ -116,11 +116,39 @@ strong {
   position: relative;
   top: 130px;
   background-color: #fff;
-  width: 101%;
+  width: 104%;
   height: 70px; }
   .info-box .course-num {
     position: relative;
-    left: 60px;
-    top: -30px; }
+    top: -30px;
+    left: 80px; }
+  .info-box .title {
+    position: relative;
+    top: -54px;
+    left: 155px;
+    width: 120px; }
+  .info-box .instructor {
+    position: relative;
+    top: -92px;
+    left: 307px; }
+  .info-box .requirements {
+    position: relative;
+    top: -114px;
+    left: 449px;
+    width: 120px; }
+  .info-box .loc-time {
+    position: relative;
+    top: -153px;
+    left: 614px;
+    width: 120px; }
+  .info-box .sess-points {
+    position: relative;
+    top: -195px;
+    left: 780px;
+    width: 60px; }
+  .info-box .call-num {
+    position: relative;
+    top: -246px;
+    left: 865px; }
 
 /*# sourceMappingURL=style.css.map */
