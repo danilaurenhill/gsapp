@@ -1,85 +1,96 @@
-/*
-Error: Invalid CSS after "    left": expected ";", was ": 120px;"
-        on line 20 of nav.scss
-        from line 4 of style.scss
+html {
+  box-sizing: border-box; }
 
-15:   width: 80%;
-16:   margin-right: 10%;
-17:   margin-left: 10%;
-18:   h2 {
-19:     position: relative
-20:     left: 120px;
-21:   }
-22:   .row {
-23:     position: relative;
-24:     margin-right: 10%;
-25:     margin-left: 10%;
+*, *::after, *::before {
+  box-sizing: inherit; }
 
-Backtrace:
-nav.scss:20
-style.scss:4
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:775:in `block in try_declaration'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:1155:in `call'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:1155:in `rethrow'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:780:in `try_declaration'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:709:in `declaration_or_ruleset'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:674:in `block_child'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:663:in `block_contents'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:655:in `block'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:674:in `block_child'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:655:in `block'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/engine.rb:309:in `to_tree'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:88:in `block in with_import'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:88:in `with_import'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:291:in `call'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:291:in `_process_changes'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:255:in `block in _wait_for_changes'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:238:in `loop'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:238:in `_wait_for_changes'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:327:in `block in _start_wait_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"    left\": expected \";\", was \": 120px;\"\A         on line 20 of nav.scss\A         from line 4 of style.scss\A \A 15:   width: 80%;\A 16:   margin-right: 10%;\A 17:   margin-left: 10%;\A 18:   h2 {\A 19:     position: relative\A 20:     left: 120px;\A 21:   }\A 22:   .row {\A 23:     position: relative;\A 24:     margin-right: 10%;\A 25:     margin-left: 10%;"; }
+h3 {
+  font-size: 24px;
+  font-weight: 400; }
+
+h2 {
+  font-size: 18px;
+  font-weight: 400; }
+
+a {
+  font-size: 14px;
+  font-weight: 400; }
+
+ /* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%; }
+
+.btn-primary {
+  background-color: #252525; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: #F1F3F1; }
+
+h5 {
+  font-family: 'Open Sans', sans-serif; }
+
+strong {
+  font-family: 'Open Sans', sans-serif; }
+
+.box {
+  border: 2px #BBB solid; }
+
+.footer {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #252525; }
+
+.nav {
+  background-color: #FFF;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed; }
+
+.navbar {
+  position: relative;
+  padding-left: 10%;
+  top: -5px; }
+
+.container {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%; }
+  .container h2 {
+    position: relative;
+    left: 7%;
+    top: 143px; }
+  .container .row {
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10%; }
+    .container .row .search-wrapper .form-control {
+      width: 100%;
+      height: 34px;
+      margin-top: 60px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px; }
+
+.footer {
+  bottom: 0;
+  height: 40px;
+  background-color: #222;
+  text-align: center;
+  padding: 10px; }
+
+/*# sourceMappingURL=style.css.map */
