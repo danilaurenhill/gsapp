@@ -33,3 +33,38 @@
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+.info-title {
+  padding: 0px 3px;
+  padding-right: 200px;
+  border-right: 2px solid $light-green;
+  &:last-child { 
+    border-right: none;
+  }
+}
+
+.content {
+    top: 10px;
+  left: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
