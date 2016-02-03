@@ -81,8 +81,7 @@ strong {
   margin-left: 10%; }
   .container h2 {
     position: relative;
-    left: 7%;
-    top: 143px; }
+    left: -20; }
   .container .row {
     position: relative;
     margin-right: 10%;

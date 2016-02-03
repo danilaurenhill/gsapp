@@ -1,0 +1,145 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GSAPP - Spring 2016</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href+"bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./stylesheets/style.css" rel="stylesheet">
+    <link
+    href='http://fonts.googleapis.com/css?family=Roboto:900,500,400,300,100' rel='stylesheet' type='text/css'>
+    <script src="./javascript/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/ui-bootstrap-0.9.0.min.js"></script>
+    <!-- Angular Scripts -->
+    <script src="scripts/app.js" ></script>
+    <script src="scripts/courseCtrl.js" ></script>
+  </head>
+<body ng-app="mainApp">
+  <div ng-controller="homeCtrl">
+    <div class="nav">
+      <div class="navbar">
+        <h3>GSAPP - Spring 2016</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container"> <br><br>
+    <div class="row"> 
+      <div class="search-wrapper">
+        <input type="text" class="form-control ng-pristine ng-valid ng-touched" ng-model="searchText" placeholder="Search anything..">
+          <h2 class="ng-binding">Architecture</h2>
+      </div>
+      <div ng-repeat="category in courseTypes" class="ng-scope">
+        <div class="section-box">
+        <div class="sections col-sm-12">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-1">Course</div>
+          <div class="col-xs-2">Title</div>
+          <div class="col-xs-2">Instructor</div>
+          <div class="col-xs-2">Requirements</div>
+          <div class="col-xs-2">Location & Time</div>
+          <div class="col-xs-2">
+            <div class="col-xs-9">Session & Points</div>
+            <div class="col-xs-3">Call No</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 courserow ng-scope" ng-repeat="course in courses | filter : {type : category.code} | filter : searchText | orderBy : 'c_id'">
+        
+        <div ng-click="toggleCourseDetails(course.call_num)" class="row">
+          <div class="col-xs-12"><br></div>
+          <div class="col-xs-1" align="center">
+            <span class="glyphicon glyphicon-collapse-down" aria-hidden="true" ng-hide="isVisibleCourseDetails(course.call_num)"></span>
+            <span class="glyphicon glyphicon-collapse-up ng-hide" aria-hidden="true" ng-show="isVisibleCourseDetails(course.call_num)"></span>
+          </div>
+          <div class="col-xs-1 ng-binding">A4002</div>
+          <div class="col-xs-2 ng-binding">CORE ARCHITECTURE STUDIO II - 001</div>
+          <div class="col-xs-2 prof ng-binding">MIMI HOANG</div>
+          <div class="col-xs-2 ng-binding">STUDIO-REQUIRED 1ST YR MARCH</div>
+          <div class="col-xs-2 ng-binding">500 AVERY NORTH<br>M, W, &amp; F 2 PM - 6 PM</div>
+          <div class="col-xs-2">
+            <div class="col-xs-8 ng-binding">FULL SEMESTER<br>9 Points<br></div>
+            <div class="col-xs-4 ng-binding">65796</div>
+          </div>
+        <div class="col-xs-12"><br></div>
+      </div>
+      <!-- COURSE DETAIL - to be shown only when the course is clicked -->
+      <div class="row details ng-hide" ng-show="isVisibleCourseDetails(course.call_num)">
+        <div class="col-sm-12">
+          <div class="col-sm-4">
+            <!-- All Previous Syllabus -->
+            <h5>Available Syllabi</h5>
+            <h6>
+              <a href="http://www.columbia.edu/cu/bulletin/uwb/subj/ARCH/A4002-20161-001" target="_blank">Bulletin Page</a>
+            </h6>
+            <h6>
+              <a href="https://courseworks.columbia.edu/public/ARCHA4002_001_2016_1/" target="_blank">Courseworks(Syllabus)</a>
+            </h6>
+            <div ng-repeat="syl in getAllSyl(syllabusMap[course.c_id], course.section) | filter : {section : course.section} | orderBy : '-year'" style="font-size:10px;height=100px;scroll:true;" class="ng-scope">
+              <a href="../syllabi2/A4002/2016/1/001/COREII_2016_Syllabus_2016 0112.pdf" target="_blank" class="ng-binding">2016 Spring MIMI HOANG</a>
+            </div>
+            <div ng-repeat="syl in getAllSyl(syllabusMap[course.c_id], course.section) | filter : {section : course.section} | orderBy : '-year'" style="font-size:10px;height=100px;scroll:true;" class="ng-scope">
+              <a href="../syllabi2/A4002/2015/1/001/A4002_2015_1_Syllabus_COREII 20141219_page1_rev1.pdf" target="_blank" class="ng-binding">2015 Spring MIMI HOANG</a>
+            </div>
+            <div ng-repeat="syl in getAllSyl(syllabusMap[course.c_id], course.section) | filter : {section : course.section} | orderBy : '-year'" style="font-size:10px;height=100px;scroll:true;" class="ng-scope">
+              <a href="../syllabi2/A4002/2014/1/001/A4002_2014_1 CORE ARCHITECTURE STUDIO II.pdf" target="_blank" class="ng-binding">2014 Spring AMALE ANDRAOS</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+                    <!-- Previous Syllabus by the instructor -->
+            <h5>Instructor's Previous Syllabus</h5>
+            <h6 ng-hide="syllabusMap[course.c_id][course.f1_id].length" class="ng-hide">No Prev Syllabi..</h6>
+                    <!-- ngRepeat: syl in syllabusMap[course.c_id][course.f1_id] -->
+            <div ng-repeat="syl in syllabusMap[course.c_id][course.f1_id]" style="font-size:10px;" class="ng-scope">
+              <a href="../syllabi2/A4002/2016/1/001/COREII_2016_Syllabus_2016 0112.pdf" target="_blank" class="ng-binding">2016 Spring</a>
+            </div><!-- end ngRepeat: syl in syllabusMap[course.c_id][course.f1_id] -->
+            <div ng-repeat="syl in syllabusMap[course.c_id][course.f1_id]" style="font-size:10px;" class="ng-scope">
+              <a href="../syllabi2/A4002/2015/1/001/A4002_2015_1_Syllabus_COREII 20141219_page1_rev1.pdf" target="_blank" class="ng-binding">2015 Spring</a>
+            </div><!-- end ngRepeat: syl in syllabusMap[course.c_id][course.f1_id] -->
+          </div>
+          <div class="col-sm-4">
+                    <!-- Previous Syllabus by the instructor -->
+            <h5>Images</h5>
+            <h6 ng-hide="imageMap[course.c_id][course.f1_id].length">No Images..</h6>
+                    <!-- ngRepeat: img in imageMap[course.c_id][course.f1_id] -->
+          </div>
+        </div>
+        <div class="col-sm-12"><br>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
