@@ -165,6 +165,7 @@ strong {
   display: inline-block; }
 
 .dropdown-content {
+  padding: 13px;
   display: none;
   position: absolute;
   background-color: black;
@@ -183,21 +184,16 @@ strong {
   .dropdown-content a:hover {
     background-color: #f1f1f1; }
 
-.dropdown:hover .dropdown-content {
+.dropdown:active .dropdown-content {
   display: block; }
 
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41; }
-
 .info-title {
-  padding: 0px 3px;
-  padding-right: 200px;
-  border-right: 2px solid #A4C5A1; }
+  border-right: 1px solid #A4C5A1; }
   .info-title:last-child {
     border-right: none; }
 
 .content {
   top: 10px;
-  left: 70px; }
+  left: 38%; }
 
 /*# sourceMappingURL=style.css.map */
