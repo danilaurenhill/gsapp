@@ -24,13 +24,14 @@ p {
   font-size: 10px;
   font-weight: 400; }
 
-.glyphicon {
+/*.glyphicon {
   color: black;
   top: 3px;
-  font-size: 24px; }
-  .glyphicon:hover {
-    color: #337ab7; }
-
+  font-size: 24px;
+  &:hover {
+    color: $columbia-blue;
+  }
+}*/
  /* Sticky footer styles
 }
 }
@@ -85,7 +86,8 @@ strong {
   margin-left: 10%; }
   .container h2 {
     position: relative;
-    left: -20px; }
+    top: 140px;
+    left: 80px; }
   .container .row {
     position: relative;
     margin-right: 10%;
