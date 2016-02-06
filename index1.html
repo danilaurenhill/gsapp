@@ -4,11 +4,10 @@
     <title>GSAPP</title>
     <link
     href='http://fonts.googleapis.com/css?family=Roboto:900,500,400,300,100' rel='stylesheet' type='text/css'>
-  </head>
   <title>GSAPP - Spring 2016</title>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="./stylesheets/style.css" rel="stylesheet">
-  <script src="./main.js"></script>
+  <link src="./js/main.js"></script>
   <script src="./javascript/main.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
   <script src="js/jquery.min.js"></script>
@@ -21,6 +20,19 @@
   <script src="scripts/courseCtrl.js" ></script>
     <!-- Site originally developed and designed by Ranjith Kumar (@ranji2612) & Ziang Jha -->
     <!-- Updated by Danielle Hill (danilaurenhill) -->
+    <script type="text/javascript">
+      $('#switch').on('click', function () {
+        var iSelector = $(this).find('i:first');
+        if (iSelector.hasClass('glyphicon-collapse-down')) {
+          iSelector.removeClass('glyphicon-collapse-down')
+          iSelector.addClass('glyphicon-collapse-up')
+        } 
+        else if (iSelector.hasClass('glyphicon-collapse-up')) {
+          iSelector.removeClass('glyphicon-collapse-up')
+          iSelector.addClass('glyphicon-collapse-down')
+        }
+      });
+    </script>
 </head>
 <body ng-app="mainApp">
   <div ng-controller="homeCtrl">
@@ -50,7 +62,9 @@
           </div>
         </div>
         <div class="info-box">
-          <span class="glyphicon glyphicon-collapse-down"></span>
+
+        <a id="switch" href="#"><i class="glyphicon glyphicon-collapse-down"></i></a>
+          <!-- <span class="glyphicon glyphicon-collapse-down"></span> -->
           <br><br><br>
           <div class="dropdown-content">
             <div class="col-sm-12">
