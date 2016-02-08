@@ -48,7 +48,7 @@ body {
   margin-bottom: 40px;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  background-color: #F1F3F1; }
+  background-color: #E4E4E4; }
 
 h5 {
   font-family: 'Open Sans', sans-serif; }
@@ -137,7 +137,7 @@ strong {
       top: 50px; }
   .unit-holder .unit2 {
     position: relative;
-    top: 500px;
+    top: 250px;
     width: 100%; }
     .unit-holder .unit2 .info-box {
       margin: -16.5px;
@@ -148,6 +148,8 @@ strong {
       height: 70px; }
       .unit-holder .unit2 .info-box p {
         text-align: center; }
+    .unit-holder .unit2 .dropdown-content {
+      top: 50px; }
 
 .dropdown {
   width: 102.1%;

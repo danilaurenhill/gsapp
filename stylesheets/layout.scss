@@ -24,7 +24,7 @@
   }
   .unit2 {
     position: relative;
-    top: 500px;
+    top: 250px;
     width: 100%;
     .info-box {
       margin: -16.5px;
@@ -36,6 +36,9 @@
       p {
         text-align: center;
       }
+    }
+    .dropdown-content {
+      top: 50px;
     }
   }
 }
