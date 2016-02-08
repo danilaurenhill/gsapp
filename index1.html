@@ -113,25 +113,10 @@
               <h6>
                 <a href="https://courseworks.columbia.edu/public/ARCHA4002_001_2016_1/" target="_blank">Courseworks(Syllabus)</a>
               </h6>
-              <div ng-repeat="syl in getAllSyl(syllabusMap[course.c_id], course.section) | filter : {section : course.section} | orderBy : '-year'" style="font-size:10px;height=100px;scroll:true;" class="ng-scope">
-                <a href="../syllabi2/A4002/2016/1/001/COREII_2016_Syllabus_2016 0112.pdf" target="_blank" class="ng-binding">2016 Spring MIMI HOANG</a>
-              </div>
-              <div ng-repeat="syl in getAllSyl(syllabusMap[course.c_id], course.section) | filter : {section : course.section} | orderBy : '-year'" style="font-size:10px;height=100px;scroll:true;" class="ng-scope">
-                <a href="../syllabi2/A4002/2015/1/001/A4002_2015_1_Syllabus_COREII 20141219_page1_rev1.pdf" target="_blank" class="ng-binding">2015 Spring MIMI HOANG</a>
-              </div>
-              <div ng-repeat="syl in getAllSyl(syllabusMap[course.c_id], course.section) | filter : {section : course.section} | orderBy : '-year'" style="font-size:10px;height=100px;scroll:true;" class="ng-scope">
-                <a href="../syllabi2/A4002/2014/1/001/A4002_2014_1 CORE ARCHITECTURE STUDIO II.pdf" target="_blank" class="ng-binding">2014 Spring AMALE ANDRAOS</a>
-              </div>
             </div>
             <div class="col-sm-4">
               <h5>Instructor's Previous Syllabus</h5>
               <h6 ng-hide="syllabusMap[course.c_id][course.f1_id].length" class="ng-hide">No Prev Syllabi..</h6>
-              <div ng-repeat="syl in syllabusMap[course.c_id][course.f1_id]" style="font-size:10px;" class="ng-scope">
-                <a href="../syllabi2/A4002/2016/1/001/COREII_2016_Syllabus_2016 0112.pdf" target="_blank" class="ng-binding">2016 Spring</a>
-              </div>
-              <div ng-repeat="syl in syllabusMap[course.c_id][course.f1_id]" style="font-size:10px;" class="ng-scope">
-                <a href="../syllabi2/A4002/2015/1/001/A4002_2015_1_Syllabus_COREII 20141219_page1_rev1.pdf" target="_blank" class="ng-binding">2015 Spring</a>
-              </div>
             </div>
             <div class="col-sm-4">
             <h5>Images</h5>
