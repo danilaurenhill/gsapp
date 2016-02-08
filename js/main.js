@@ -11,5 +11,5 @@
 // });
 
 $('#menu-toggle').click( function(){
-    $(this).find('span').toggleClass('glyphicon-collapse-down').toggleClass('glyphicon-collapse-up');
+    $(this).find('i').toggleClass('glyphicon-collapse-down').toggleClass('glyphicon-collapse-up');
 });

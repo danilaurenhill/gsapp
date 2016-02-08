@@ -1,52 +1,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>GSAPP</title>
     <link
     href='http://fonts.googleapis.com/css?family=Roboto:900,500,400,300,100' rel='stylesheet' type='text/css'>
-  <title>GSAPP - Spring 2016</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link href="./stylesheets/style.css" rel="stylesheet">
-  <link src="./js/main.js"></script>
-  <script src="./javascript/main.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/angular.min.js"></script>
-  <script src="js/angular-route.min.js"></script>
-  <script type="text/javascript" src="js/ui-bootstrap-0.9.0.min.js"></script>
-    <!-- Angular Scripts -->
-  <script src="scripts/app.js" ></script>
-  <script src="scripts/courseCtrl.js" ></script>
+    <title>GSAPP - Spring 2016</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="./stylesheets/style.css" rel="stylesheet">
+    <script src="./main1.js"></script>
     <!-- Site originally developed and designed by Ranjith Kumar (@ranji2612) & Ziang Jha -->
     <!-- Updated by Danielle Hill (danilaurenhill) -->
-    <script type="text/javascript">
-      $('#switch').on('click', function () {
-        var iSelector = $(this).find('i:first');
-        if (iSelector.hasClass('glyphicon-collapse-down')) {
-          iSelector.removeClass('glyphicon-collapse-down')
-          iSelector.addClass('glyphicon-collapse-up')
-        } 
-        else if (iSelector.hasClass('glyphicon-collapse-up')) {
-          iSelector.removeClass('glyphicon-collapse-up')
-          iSelector.addClass('glyphicon-collapse-down')
-        }
-      });
-    </script>
-</head>
-<body ng-app="mainApp">
-  <div ng-controller="homeCtrl">
-    <div class="nav">
-      <div class="navbar">
-        <h3>GSAPP - Spring 2016</h3>
-      </div>
-    </div>
-    <div class="container">
-      <h2>Architecture</h2>
-      <div class="row">
-        <div class="search-wrapper">
-          <input type="text" class="form-control ng-pristine ng-valid ng-touched" ng-    model="searchText" placeholder="Search anything..">
+  </head>
+  <body ng-app="mainApp">
+    <div ng-controller="homeCtrl">
+      <div class="nav">
+        <div class="navbar">
+          <h3>GSAPP - Spring 2016</h3>
         </div>
+      </div>
+        <div class="container">
+        <h2>Architecture</h2>
+        <div class="row">
+          <div class="search-wrapper">
+            <input type="text" class="form-control ng-pristine ng-valid ng-touched" ng-model="searchText"   placeholder="Search anything..">
+          </div>
+  
         <div class="section-box">
           <div class="sections col-sm-12">
             <div class="col-xs-1"></div>
@@ -63,8 +40,14 @@
         </div>
         <div class="info-box">
 
-        <a id="switch" href="#"><i class="glyphicon glyphicon-collapse-down"></i></a>
-          <!-- <span class="glyphicon glyphicon-collapse-down"></span> -->
+        <!-- <button onclick="myFunction()"><i class="glyphicon glyphicon-collapse-down"></i></a></button> -->
+        <a id="toggle"><span class="glyphicon glyphicon-collapse-down"></span></a>
+        <script>
+          $('#toggle').click(function(){
+            $(this).find('span').toggleClass('glyphicon-collapse-down').toggleClass('glyphicon-collapse-up');
+          });
+        </script>
+
           <br><br><br>
           <div class="dropdown-content">
             <div class="col-sm-12">
