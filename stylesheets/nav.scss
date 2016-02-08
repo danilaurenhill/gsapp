@@ -1,5 +1,6 @@
 .nav {
-  background-color: #FFF;
+  z-index: 7;
+  background: rgba(white, 0.9);
   left: 0;
   right: 0;
   top: 0;
@@ -12,6 +13,8 @@
 }
 
 .container {
+  z-index: 2;
+  position: absolute;
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;

@@ -61,7 +61,8 @@ strong {
   border: 2px #BBB solid; }
 
 .nav {
-  background-color: #FFF;
+  z-index: 7;
+  background: rgba(255, 255, 255, 0.9);
   left: 0;
   right: 0;
   top: 0;
@@ -73,6 +74,8 @@ strong {
   top: -5px; }
 
 .container {
+  z-index: 2;
+  position: absolute;
   width: 80%;
   margin-right: 10%;
   margin-left: 10%; }
@@ -112,6 +115,7 @@ strong {
   left: -5px; }
 
 .unit-holder {
+  z-index: 1;
   position: absolute; }
   .unit-holder .unit1 {
     position: relative;
