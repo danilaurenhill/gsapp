@@ -8,7 +8,9 @@
     <link
     href='http://fonts.googleapis.com/css?family=Roboto:900,500,400,300,100' rel='stylesheet' type='text/css'>
     <script src="./javascript/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
+    <script src="./javascript/content.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
@@ -29,7 +31,7 @@
     <div class="row"> 
       <div class="search-wrapper">
         <input type="text" class="form-control ng-pristine ng-valid ng-touched" ng-model="searchText" placeholder="Search anything..">
-          <h2 class="ng-binding">Architecture</h2>
+          <h3 class="ng-binding">Architecture</h3>
       </div>
       <div ng-repeat="category in courseTypes" class="ng-scope">
         <div class="section-box">
@@ -41,7 +43,7 @@
           <div class="col-xs-2">Requirements</div>
           <div class="col-xs-2">Location & Time</div>
           <div class="col-xs-2">
-            <div class="col-xs-9">Session & Points</div>
+            <div class="col-xs-7">Session & Points</div>
             <div class="col-xs-3">Call No</div>
           </div>
         </div>
@@ -108,23 +110,25 @@
         </div>
         <div class="col-sm-12"><br></div>
       </div>
+      <div class="col-sm-12 courserow ng-scope" ng-repeat="course in courses | filter : {type : category.code} | filter : searchText | orderBy |'c_id'">
+        <div ng-click="toggleCourseDetails(course.call_num)" class="row">
+          <div class="col-xs-12"><br></div>
+          <div class="col-xs-1" align="center">
+            <span class="glyphicon glyphicon-collapse-down" aria-hidden="true" ng-hide="isVisibleCourseDetails(course.call_num)"></span>
+            <span class="glyphicon glyphicon-collapse-up ng-hide" aria-hidden="true" ng-show="isVisibleCourseDetails(course.call_num)"></span>
+          </div>
+          <div class="col-xs-1 ng-binding">A4004</div>
+          <div class="col-xs-2 ng-binding">ADVANCED STUDIO IV - 001</div>
+          <div class="col-xs-2 prof ng-binding">DAVID BENJAMIN</div>
+          <div class="col-xs-2 ng-binding">STUDIO- REQUIRED 2ND YR MARCH</div>
+          <div class="col-xs-2 ng-binding">
+                500 AVERY SOUTH<br>
+                MTH 1:30 PM - 6:30 PM , W 3 PM - 5 PM
+          </div>
+          <div class="col-xs-12"><br></div>
+        </div>
     </div>
 
-
-<!-- <div class="dropdown">
-            <span class="glyphicon glyphicon-collapse-down"></span>
-              <div class="dropdown-content">
-                <a href="#" class="info-title col-xs-4"><center>Available Syllabi</center>
-                  <p class="content col-xs-4"><a href="http://www.columbia.edu/cu/bulletin/uwb/subj/ARCH/A4002-20161-001" target="_blank">Bulletin Page</a></p>
-                </a>
-                <a href="#" class="info-title col-xs-4"><center>Instructor's Previous Syllabus</center>
-                  <p class="content col-xs-3">Previous Syllabus</p>
-                </a>
-                <a href="#" class="info-title col-xs-4"><center>Images</center>
-                  <p class="content col-xs-4">Images</p>
-                </a>
-              </div>
-            </div> -->
 
 
 

@@ -1,66 +1,28 @@
-.col-sm-12 {
-  width: 110%;
-}
-.section-box {
-  margin-right: 0%;
-  margin-left: 5%;
-  .sections {
-    height: 40px;
-    left: -60px;
-    position: absolute;
-    font-weight: 600;
-    top: 170px;
+.unit1 {
+    width: 104%;
+  .info-box {
+    margin: -16.5px;
+    background-color: white;
+    padding: 10px;
+    width: 900px;
+    left: -20px;
+    height: 70px;
+    p {
+      text-align: center;
+    }
   }
 }
-.info-box {
-  padding: 10px;
-  position: relative;
-  top: 120px;
-  background-color: #fff;
-  width: 104%;
-  height: 70px;
-  .course-num {
-    position: absolute;
-    top: 10px;
-    left: 52px;
+/*.unit2 {
+   width: 104%;
+  .info-box {
+    margin: -16.5px;
+    background-color: white;
+    padding: 10px;
+    width: 900px;
+    left: -20px;
+    height: 70px;
+    p {
+      text-align: center;
+    }
   }
-  .title {
-    position: absolute;
-    top: 10px;
-    left: 132px;
-    width: 120px;
-  }
-  .instructor {
-    position: absolute;
-    top: 10px;
-    left: 291px;
-  }
-  .requirements {
-    position: absolute;
-    top: 10px;
-    left: 450px;
-    width: 120px;
-  }
-  .loc-time {
-    position: absolute;
-    top: 10px;
-    left: 610px;
-    width: 120px;
-  }
-  .sess-points {
-    position: absolute;
-    top: 10px;
-    left: 785px;
-    width: 60px;
-  }
-  .call-num {
-    position: absolute;
-    top: 10px;
-    left: 882px;
-  }
-}
-
-
-
-
-
+}*/

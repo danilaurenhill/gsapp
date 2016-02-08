@@ -91,78 +91,54 @@ strong {
     position: relative;
     margin-right: 10%;
     margin-left: 10%; }
-    .container .row .search-wrapper .form-control {
-      width: 100%;
-      height: 34px;
-      margin-top: 60px;
-      padding: 6px 12px;
-      font-size: 14px;
-      line-height: 1.42857143;
-      color: #555;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 4px; }
+    .container .row .search-wrapper {
+      padding-bottom: 50px; }
+      .container .row .search-wrapper .form-control {
+        width: 100%;
+        height: 34px;
+        margin-top: 60px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px; }
 
 .footer {
+  top: 660px;
   bottom: 0;
   height: 40px;
   background-color: #222;
   text-align: center;
   padding: 10px; }
 
-.col-sm-12 {
-  width: 110%; }
+.unit1 {
+  width: 104%; }
+  .unit1 .info-box {
+    margin: -16.5px;
+    background-color: white;
+    padding: 10px;
+    width: 900px;
+    left: -20px;
+    height: 70px; }
+    .unit1 .info-box p {
+      text-align: center; }
 
-.section-box {
-  margin-right: 0%;
-  margin-left: 5%; }
-  .section-box .sections {
-    height: 40px;
-    left: -60px;
-    position: absolute;
-    font-weight: 600;
-    top: 170px; }
-
-.info-box {
-  padding: 10px;
-  position: relative;
-  top: 120px;
-  background-color: #fff;
-  width: 104%;
-  height: 70px; }
-  .info-box .course-num {
-    position: absolute;
-    top: 10px;
-    left: 52px; }
-  .info-box .title {
-    position: absolute;
-    top: 10px;
-    left: 132px;
-    width: 120px; }
-  .info-box .instructor {
-    position: absolute;
-    top: 10px;
-    left: 291px; }
-  .info-box .requirements {
-    position: absolute;
-    top: 10px;
-    left: 450px;
-    width: 120px; }
-  .info-box .loc-time {
-    position: absolute;
-    top: 10px;
-    left: 610px;
-    width: 120px; }
-  .info-box .sess-points {
-    position: absolute;
-    top: 10px;
-    left: 785px;
-    width: 60px; }
-  .info-box .call-num {
-    position: absolute;
-    top: 10px;
-    left: 882px; }
-
+/*.unit2 {
+   width: 104%;
+  .info-box {
+    margin: -16.5px;
+    background-color: white;
+    padding: 10px;
+    width: 900px;
+    left: -20px;
+    height: 70px;
+    p {
+      text-align: center;
+    }
+  }
+}*/
 .dropdown {
   width: 102.1%;
   position: relative;
@@ -170,12 +146,12 @@ strong {
 
 .dropdown-content {
   padding: 13px;
-  /*display: none;*/
   position: absolute;
-  background-color: black;
+  /*background-color: black;*/
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 138px;
-  top: 65px;
+  top: 260px;
   left: 0px; }
   .dropdown-content a {
     color: #A4C5A1;
