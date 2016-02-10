@@ -137,6 +137,25 @@
       top: 50px;
     }
   }
+  .unit8 {
+    position: relative;
+    width: 100%;
+    top: 1343px;
+    .info-box {
+      margin: -16.5px;
+      background-color: white;
+      padding: 10px;
+      width: 900px;
+      left: -20px;
+      height: 70px;
+      p {
+        text-align: center;
+      }
+    }
+    .dropdown-content {
+      top: 50px;
+    }
+  }
 }
 
 
