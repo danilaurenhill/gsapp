@@ -1,4 +1,4 @@
-.sections {
+#arch {
   left: -5px;
 }
 .unit-holder {
@@ -1566,6 +1566,7 @@
     position: relative;
     width: 100%;
     top: 13413px;
+    padding-bottom: 500px;
     .info-box {
       margin: -16.5px;
       background-color: white;
@@ -1580,8 +1581,17 @@
     .dropdown-content {
       top: 50px;
     }
+    h2 {
+      padding-top: 20px;
+      left: -47px;
+    }
   }
+}
 
+#vs {
+  position: relative;
+  top: 13220px;
+  left: -5px;
 }
 
 

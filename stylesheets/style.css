@@ -112,7 +112,7 @@ strong {
   text-align: center;
   padding: 10px; }
 
-.sections {
+#arch {
   left: -5px; }
 
 .unit-holder {
@@ -1351,7 +1351,8 @@ strong {
   .unit-holder .unit83 {
     position: relative;
     width: 100%;
-    top: 13413px; }
+    top: 13413px;
+    padding-bottom: 500px; }
     .unit-holder .unit83 .info-box {
       margin: -16.5px;
       background-color: white;
@@ -1363,6 +1364,14 @@ strong {
         text-align: center; }
     .unit-holder .unit83 .dropdown-content {
       top: 50px; }
+    .unit-holder .unit83 h2 {
+      padding-top: 20px;
+      left: -47px; }
+
+#vs {
+  position: relative;
+  top: 13220px;
+  left: -5px; }
 
 .dropdown-content {
   padding: 13px;
