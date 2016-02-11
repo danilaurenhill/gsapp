@@ -1351,8 +1351,7 @@ strong {
   .unit-holder .unit83 {
     position: relative;
     width: 100%;
-    top: 13413px;
-    /*padding-bottom: 500px;*/ }
+    top: 13413px; }
     .unit-holder .unit83 .info-box {
       margin: -16.5px;
       background-color: white;
@@ -1365,6 +1364,7 @@ strong {
     .unit-holder .unit83 .dropdown-content {
       top: 50px; }
     .unit-holder .unit83 h2 {
+      font-size: 21px;
       padding-top: 20px;
       left: -47px; }
     .unit-holder .unit83 .sections {
@@ -1642,7 +1642,8 @@ strong {
   .unit-holder .vs-unit19 {
     position: relative;
     width: 100%;
-    top: 16340px; }
+    top: 16340px;
+    padding-bottom: 400px; }
     .unit-holder .vs-unit19 .info-box {
       margin: -16.5px;
       background-color: white;
@@ -1655,10 +1656,11 @@ strong {
     .unit-holder .vs-unit19 .dropdown-content {
       top: 50px; }
     .unit-holder .vs-unit19 h2 {
+      font-size: 21px;
       padding-top: 20px;
       left: -47px; }
-    .unit-holder .vs-unit19 .sections {
-      top: 160px; }
+    .unit-holder .vs-unit19 .section-box {
+      top: 560px; }
 
 .dropdown-content {
   padding: 13px;
