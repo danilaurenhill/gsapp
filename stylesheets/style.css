@@ -1352,7 +1352,7 @@ strong {
     position: relative;
     width: 100%;
     top: 13413px;
-    padding-bottom: 500px; }
+    /*padding-bottom: 500px;*/ }
     .unit-holder .unit83 .info-box {
       margin: -16.5px;
       background-color: white;
@@ -1367,11 +1367,23 @@ strong {
     .unit-holder .unit83 h2 {
       padding-top: 20px;
       left: -47px; }
-
-#vs {
-  position: relative;
-  top: 13220px;
-  left: -5px; }
+    .unit-holder .unit83 .sections {
+      top: 160px; }
+  .unit-holder .vs-unit1 {
+    position: relative;
+    width: 100%;
+    top: 13591px; }
+    .unit-holder .vs-unit1 .info-box {
+      margin: -16.5px;
+      background-color: white;
+      padding: 10px;
+      width: 900px;
+      left: -20px;
+      height: 70px; }
+      .unit-holder .vs-unit1 .info-box p {
+        text-align: center; }
+    .unit-holder .vs-unit1 .dropdown-content {
+      top: 50px; }
 
 .dropdown-content {
   padding: 13px;

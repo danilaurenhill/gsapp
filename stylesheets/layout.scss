@@ -1566,7 +1566,7 @@
     position: relative;
     width: 100%;
     top: 13413px;
-    padding-bottom: 500px;
+    /*padding-bottom: 500px;*/
     .info-box {
       margin: -16.5px;
       background-color: white;
@@ -1585,14 +1585,31 @@
       padding-top: 20px;
       left: -47px;
     }
+    .sections {
+      top: 160px;
+    }
+  }
+  .vs-unit1 {
+    position: relative;
+    width: 100%;
+    top: 13591px;
+    .info-box {
+      margin: -16.5px;
+      background-color: white;
+      padding: 10px;
+      width: 900px;
+      left: -20px;
+      height: 70px;
+      p {
+        text-align: center;
+      }
+    }
+    .dropdown-content {
+      top: 50px;
+    }
   }
 }
 
-#vs {
-  position: relative;
-  top: 13220px;
-  left: -5px;
-}
 
 
 
