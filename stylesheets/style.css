@@ -1809,6 +1809,12 @@ strong {
     text-decoration: none;
     display: block;
     font-size: 11px; }
+    .dropdown-content a::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .dropdown-content a:hover {
+    color: #337ab7; }
   .dropdown-content h5 {
     margin-top: 2px;
     color: #fff; }
@@ -1817,8 +1823,6 @@ strong {
     color: #A4C5A1; }
   .dropdown-content p {
     color: #A4C5A1; }
-  .dropdown-content a:hover {
-    color: #337ab7; }
 
 .dropdown:active .dropdown-content {
   display: block; }

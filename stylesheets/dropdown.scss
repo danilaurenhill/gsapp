@@ -7,11 +7,15 @@
   top: 260px;
   left: 0px;
   a {
+    @include clearfix;
     text-align: center;
     color: $light-green;
     text-decoration: none;
     display: block;
     font-size: 11px;
+  }
+  a:hover {
+    color: $columbia-blue;
   }
   h5 {
     margin-top: 2px;
@@ -23,9 +27,6 @@
   }
   p {
     color: $light-green;
-  }
-  a:hover {
-    color: $columbia-blue;
   }
 }
 
