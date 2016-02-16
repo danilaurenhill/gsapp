@@ -162,6 +162,10 @@
     .dropdown-content {
       top: 50px;
       margin-top: 175px;
+      a:hover {
+        @include clearfix;
+        color: yellow;
+      }
     }
   }
   .unit9 {
