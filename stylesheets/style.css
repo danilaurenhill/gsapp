@@ -18,9 +18,14 @@ h3 {
   font-weight: 400;
   margin-top: 4px; }
 
-h5 {
+h4 {
   text-align: center;
   font-size: 13px;
+  font-weight: 400; }
+
+h5 {
+  text-align: center;
+  font-size: 11px;
   font-weight: 400; }
 
 a {
@@ -1815,21 +1820,18 @@ strong {
   height: 138px;
   top: 260px;
   left: 0px; }
-  .dropdown-content h6 {
-    text-align: center;
+  .dropdown-content h5 {
     color: #A4C5A1;
     text-decoration: none;
-    display: block;
-    font-size: 11px; }
-    .dropdown-content h6::after {
+    display: block; }
+    .dropdown-content h5::after {
       clear: both;
       content: "";
       display: table; }
-  .dropdown-content h5 {
+  .dropdown-content h4 {
     margin-top: 2px;
     color: #fff; }
-  .dropdown-content h6 {
-    text-align: center;
+  .dropdown-content h5 {
     color: #A4C5A1; }
   .dropdown-content p {
     color: #A4C5A1; }
