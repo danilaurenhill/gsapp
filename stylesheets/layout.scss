@@ -5,6 +5,7 @@
   z-index: 1;
   position: absolute;
   .unit1 {
+    @include clearfix;
     padding-top: 60px;
     position: relative;
     width: 100%;
@@ -20,12 +21,12 @@
       }
     }
     .dropdown-content {
-      margin-top: 60px;
+      margin-top: 6px;
       top: 55px;
     }
   }
   .unit2 {
-    padding-top: 180px;
+    padding-top: 55px;
     position: relative;
     width: 100%;
     .info-box {
@@ -40,12 +41,12 @@
       }
     }
     .dropdown-content {
-      margin-top: 180px;
-      top: 50px;
+      margin-top: 6px;
+      top: 55px;
     }
   }
   .unit3 {
-    padding-top: 175px;
+    padding-top: 105px;
     position: relative;
     width: 100%;
     .info-box {
@@ -60,8 +61,8 @@
       }
     }
     .dropdown-content {
-      margin-top: 180px;
-      top: 50px;
+      /*margin-top: 180px;*/
+      top: 55px;
     }
   }
   .unit4 {
@@ -162,10 +163,6 @@
     .dropdown-content {
       top: 50px;
       margin-top: 175px;
-      a:hover {
-        @include clearfix;
-        color: yellow;
-      }
     }
   }
   .unit9 {
