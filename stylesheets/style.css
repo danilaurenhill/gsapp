@@ -36,7 +36,6 @@ h6 {
     font-size: 10px; }
 
 a {
-  /*text-align: center;*/
   font-size: 10px;
   font-weight: 400; }
 
@@ -138,40 +137,38 @@ strong {
   z-index: 1;
   position: absolute; }
   .unit-holder .unit1 {
-    padding-top: 60px;
-    position: relative;
+    padding-top: 15px;
     width: 100%; }
-    .unit-holder .unit1::after {
-      clear: both;
-      content: "";
-      display: table; }
     .unit-holder .unit1 .info-box {
-      margin: -16.5px;
+      position: relative;
       background-color: white;
-      padding: 10px;
       width: 900px;
-      left: -20px;
-      height: 70px; }
+      left: -15px;
+      height: 70px;
+      top: 30px; }
       .unit-holder .unit1 .info-box p {
         text-align: center; }
     .unit-holder .unit1 .dropdown-content {
-      margin-top: 6px;
-      top: 55px; }
+      padding-top: 15px; }
+      .unit-holder .unit1 .dropdown-content h4 {
+        margin-top: -5px; }
   .unit-holder .unit2 {
-    padding-top: 55px;
-    position: relative;
+    /*@include clearfix;*/
+    padding-top: 103px;
+    /*position: relative;*/
     width: 100%; }
     .unit-holder .unit2 .info-box {
       margin: -16.5px;
       background-color: white;
-      padding: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
       width: 900px;
       left: -20px;
       height: 70px; }
       .unit-holder .unit2 .info-box p {
         text-align: center; }
     .unit-holder .unit2 .dropdown-content {
-      margin-top: 6px;
+      margin-top: 10px;
       top: 55px; }
   .unit-holder .unit3 {
     padding-top: 105px;
@@ -1819,13 +1816,14 @@ strong {
       margin-top: 175px; }
 
 .dropdown-content {
-  padding-top: 13px;
-  position: relative;
+  /*padding-top: 13px;*/
+  /*position: unset;*/
   background: rgba(0, 0, 0, 0.6);
-  width: 102.2%;
+  width: 900px;
   height: 138px;
-  top: 260px;
-  left: -9px; }
+  position-top: 20px;
+  /*top: 160px;*/
+  /*left: -9px;*/ }
   .dropdown-content::after {
     clear: both;
     content: "";
@@ -1839,14 +1837,11 @@ strong {
       content: "";
       display: table; }
   .dropdown-content h4 {
-    margin-top: -12px;
+    margin-top: 12px;
     color: white; }
-  .dropdown-content h5 {
-    color: #A4C5A1; }
   .dropdown-content p {
     color: #A4C5A1; }
   .dropdown-content a {
-    text-align: center;
     text-align: center;
     color: #A4C5A1; }
     .dropdown-content a:hover {
@@ -1861,8 +1856,9 @@ strong {
   .info-title:last-child {
     border-right: none; }
 
-.content {
+/*.content {
   top: 10px;
-  left: 38%; }
+  left: 38%;
+}*/
 
 /*# sourceMappingURL=style.css.map */

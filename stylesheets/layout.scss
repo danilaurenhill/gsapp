@@ -5,34 +5,36 @@
   z-index: 1;
   position: absolute;
   .unit1 {
-    @include clearfix;
-    padding-top: 60px;
-    position: relative;
+    padding-top: 15px;
     width: 100%;
     .info-box {
-      margin: -16.5px;
+      position: relative;
       background-color: white;
-      padding: 10px;
       width: 900px;
-      left: -20px;
+      left: -15px;
       height: 70px;
+      top: 30px;
       p {
         text-align: center;
       }
     }
     .dropdown-content {
-      margin-top: 6px;
-      top: 55px;
+      padding-top: 15px;
+      h4 {
+        margin-top: -5px;
+      }
     }
   }
   .unit2 {
-    padding-top: 55px;
-    position: relative;
+   /*@include clearfix;*/
+    padding-top: 103px;
+    /*position: relative;*/
     width: 100%;
     .info-box {
       margin: -16.5px;
       background-color: white;
-      padding: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
       width: 900px;
       left: -20px;
       height: 70px;
@@ -41,7 +43,7 @@
       }
     }
     .dropdown-content {
-      margin-top: 6px;
+      margin-top: 10px;
       top: 55px;
     }
   }

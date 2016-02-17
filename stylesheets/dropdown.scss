@@ -1,12 +1,13 @@
 .dropdown-content {
+  /*padding-top: 13px;*/
   @include clearfix;
-  padding-top: 13px;
-  position: relative;
+  /*position: unset;*/
   background: rgba(black, 0.6);
-  width: 102.2%;
+  width: 900px;
   height: 138px;
-  top: 260px;
-  left: -9px;
+  position-top: 20px;
+  /*top: 160px;*/
+  /*left: -9px;*/
   h5 {
     @include clearfix;
     color: $light-green;
@@ -14,17 +15,13 @@
     display: block;
   }
   h4 {
-    margin-top: -12px;
+    margin-top: 12px;
     color: white;
-  }
-  h5 {
-    color: $light-green;
   }
   p {
     color: $light-green;
   }
   a {
-    text-align: center;
     text-align: center;
     color: $light-green;
     &:hover {
@@ -45,10 +42,10 @@
   }
 }
 
-.content {
+/*.content {
   top: 10px;
   left: 38%;
-}
+}*/
 
 
 
