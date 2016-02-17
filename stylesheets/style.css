@@ -137,41 +137,39 @@ strong {
   z-index: 1;
   position: absolute; }
   .unit-holder .unit1 {
-    padding-top: 15px;
+    padding-top: 60px;
+    position: relative;
     width: 100%; }
     .unit-holder .unit1 .info-box {
-      position: relative;
+      margin: -16.5px;
       background-color: white;
+      padding: 10px;
       width: 900px;
-      left: -15px;
-      height: 70px;
-      top: 30px; }
+      left: -20px;
+      height: 70px; }
       .unit-holder .unit1 .info-box p {
         text-align: center; }
     .unit-holder .unit1 .dropdown-content {
-      padding-top: 15px; }
-      .unit-holder .unit1 .dropdown-content h4 {
-        margin-top: -5px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit2 {
-    /*@include clearfix;*/
-    padding-top: 103px;
-    /*position: relative;*/
+    padding-top: 20px;
+    position: relative;
     width: 100%; }
     .unit-holder .unit2 .info-box {
       margin: -16.5px;
       background-color: white;
-      padding-left: 10px;
-      padding-right: 10px;
+      padding: 10px;
       width: 900px;
       left: -20px;
       height: 70px; }
       .unit-holder .unit2 .info-box p {
         text-align: center; }
     .unit-holder .unit2 .dropdown-content {
-      margin-top: 10px;
-      top: 55px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit3 {
-    padding-top: 105px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit3 .info-box {
@@ -184,10 +182,10 @@ strong {
       .unit-holder .unit3 .info-box p {
         text-align: center; }
     .unit-holder .unit3 .dropdown-content {
-      /*margin-top: 180px;*/
-      top: 55px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit4 {
-    padding-top: 180px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit4 .info-box {
@@ -200,10 +198,10 @@ strong {
       .unit-holder .unit4 .info-box p {
         text-align: center; }
     .unit-holder .unit4 .dropdown-content {
-      margin-top: 180px;
+      margin-top: 60px;
       top: 50px; }
   .unit-holder .unit5 {
-    padding-top: 153px;
+    padding-top: 76px;
     position: relative;
     width: 100%; }
     .unit-holder .unit5 .info-box {
@@ -216,10 +214,10 @@ strong {
       .unit-holder .unit5 .info-box p {
         text-align: center; }
     .unit-holder .unit5 .dropdown-content {
-      top: 50px;
-      margin-top: 155px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit6 {
-    padding-top: 178px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit6 .info-box {
@@ -232,10 +230,10 @@ strong {
       .unit-holder .unit6 .info-box p {
         text-align: center; }
     .unit-holder .unit6 .dropdown-content {
-      top: 50px;
-      margin-top: 182px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit7 {
-    padding-top: 180px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit7 .info-box {
@@ -248,10 +246,10 @@ strong {
       .unit-holder .unit7 .info-box p {
         text-align: center; }
     .unit-holder .unit7 .dropdown-content {
-      top: 50px;
-      margin-top: 180px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit8 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit8 .info-box {
@@ -264,10 +262,10 @@ strong {
       .unit-holder .unit8 .info-box p {
         text-align: center; }
     .unit-holder .unit8 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit9 {
-    padding-top: 152px;
+    padding-top: 20px;
     position: relative;
     width: 100%; }
     .unit-holder .unit9 .info-box {
@@ -280,10 +278,10 @@ strong {
       .unit-holder .unit9 .info-box p {
         text-align: center; }
     .unit-holder .unit9 .dropdown-content {
-      top: 50px;
-      margin-top: 152px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit10 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit10 .info-box {
@@ -296,10 +294,10 @@ strong {
       .unit-holder .unit10 .info-box p {
         text-align: center; }
     .unit-holder .unit10 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit11 {
-    padding-top: 153px;
+    padding-top: 76px;
     position: relative;
     width: 100%; }
     .unit-holder .unit11 .info-box {
@@ -312,10 +310,10 @@ strong {
       .unit-holder .unit11 .info-box p {
         text-align: center; }
     .unit-holder .unit11 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit12 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit12 .info-box {
@@ -328,10 +326,10 @@ strong {
       .unit-holder .unit12 .info-box p {
         text-align: center; }
     .unit-holder .unit12 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit13 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit13 .info-box {
@@ -344,10 +342,10 @@ strong {
       .unit-holder .unit13 .info-box p {
         text-align: center; }
     .unit-holder .unit13 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit14 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit14 .info-box {
@@ -360,10 +358,10 @@ strong {
       .unit-holder .unit14 .info-box p {
         text-align: center; }
     .unit-holder .unit14 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit15 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit15 .info-box {
@@ -376,10 +374,10 @@ strong {
       .unit-holder .unit15 .info-box p {
         text-align: center; }
     .unit-holder .unit15 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit16 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit16 .info-box {
@@ -392,10 +390,10 @@ strong {
       .unit-holder .unit16 .info-box p {
         text-align: center; }
     .unit-holder .unit16 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit17 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit17 .info-box {
@@ -408,10 +406,10 @@ strong {
       .unit-holder .unit17 .info-box p {
         text-align: center; }
     .unit-holder .unit17 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit18 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit18 .info-box {
@@ -424,10 +422,10 @@ strong {
       .unit-holder .unit18 .info-box p {
         text-align: center; }
     .unit-holder .unit18 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit19 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit19 .info-box {
@@ -440,10 +438,10 @@ strong {
       .unit-holder .unit19 .info-box p {
         text-align: center; }
     .unit-holder .unit19 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit20 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit20 .info-box {
@@ -456,10 +454,10 @@ strong {
       .unit-holder .unit20 .info-box p {
         text-align: center; }
     .unit-holder .unit20 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit21 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit21 .info-box {
@@ -472,10 +470,10 @@ strong {
       .unit-holder .unit21 .info-box p {
         text-align: center; }
     .unit-holder .unit21 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit22 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit22 .info-box {
@@ -488,10 +486,10 @@ strong {
       .unit-holder .unit22 .info-box p {
         text-align: center; }
     .unit-holder .unit22 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit23 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit23 .info-box {
@@ -504,10 +502,10 @@ strong {
       .unit-holder .unit23 .info-box p {
         text-align: center; }
     .unit-holder .unit23 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit24 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit24 .info-box {
@@ -520,10 +518,10 @@ strong {
       .unit-holder .unit24 .info-box p {
         text-align: center; }
     .unit-holder .unit24 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit25 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit25 .info-box {
@@ -536,10 +534,10 @@ strong {
       .unit-holder .unit25 .info-box p {
         text-align: center; }
     .unit-holder .unit25 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit26 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit26 .info-box {
@@ -552,10 +550,10 @@ strong {
       .unit-holder .unit26 .info-box p {
         text-align: center; }
     .unit-holder .unit26 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit27 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit27 .info-box {
@@ -568,10 +566,10 @@ strong {
       .unit-holder .unit27 .info-box p {
         text-align: center; }
     .unit-holder .unit27 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit28 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit28 .info-box {
@@ -584,10 +582,10 @@ strong {
       .unit-holder .unit28 .info-box p {
         text-align: center; }
     .unit-holder .unit28 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit29 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit29 .info-box {
@@ -600,10 +598,10 @@ strong {
       .unit-holder .unit29 .info-box p {
         text-align: center; }
     .unit-holder .unit29 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit30 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit30 .info-box {
@@ -616,10 +614,10 @@ strong {
       .unit-holder .unit30 .info-box p {
         text-align: center; }
     .unit-holder .unit30 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit31 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit31 .info-box {
@@ -632,10 +630,10 @@ strong {
       .unit-holder .unit31 .info-box p {
         text-align: center; }
     .unit-holder .unit31 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit32 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit32 .info-box {
@@ -648,10 +646,10 @@ strong {
       .unit-holder .unit32 .info-box p {
         text-align: center; }
     .unit-holder .unit32 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit33 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit33 .info-box {
@@ -664,10 +662,10 @@ strong {
       .unit-holder .unit33 .info-box p {
         text-align: center; }
     .unit-holder .unit33 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit34 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit34 .info-box {
@@ -680,10 +678,10 @@ strong {
       .unit-holder .unit34 .info-box p {
         text-align: center; }
     .unit-holder .unit34 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit35 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit35 .info-box {
@@ -696,10 +694,10 @@ strong {
       .unit-holder .unit35 .info-box p {
         text-align: center; }
     .unit-holder .unit35 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit36 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit36 .info-box {
@@ -712,10 +710,10 @@ strong {
       .unit-holder .unit36 .info-box p {
         text-align: center; }
     .unit-holder .unit36 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit37 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit37 .info-box {
@@ -728,10 +726,10 @@ strong {
       .unit-holder .unit37 .info-box p {
         text-align: center; }
     .unit-holder .unit37 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit38 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit38 .info-box {
@@ -744,10 +742,10 @@ strong {
       .unit-holder .unit38 .info-box p {
         text-align: center; }
     .unit-holder .unit38 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit39 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit39 .info-box {
@@ -760,10 +758,10 @@ strong {
       .unit-holder .unit39 .info-box p {
         text-align: center; }
     .unit-holder .unit39 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit40 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit40 .info-box {
@@ -776,10 +774,10 @@ strong {
       .unit-holder .unit40 .info-box p {
         text-align: center; }
     .unit-holder .unit40 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit41 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit41 .info-box {
@@ -792,10 +790,10 @@ strong {
       .unit-holder .unit41 .info-box p {
         text-align: center; }
     .unit-holder .unit41 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit42 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit42 .info-box {
@@ -808,10 +806,10 @@ strong {
       .unit-holder .unit42 .info-box p {
         text-align: center; }
     .unit-holder .unit42 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit43 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit43 .info-box {
@@ -824,10 +822,10 @@ strong {
       .unit-holder .unit43 .info-box p {
         text-align: center; }
     .unit-holder .unit43 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit44 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit44 .info-box {
@@ -840,10 +838,10 @@ strong {
       .unit-holder .unit44 .info-box p {
         text-align: center; }
     .unit-holder .unit44 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit45 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit45 .info-box {
@@ -856,10 +854,10 @@ strong {
       .unit-holder .unit45 .info-box p {
         text-align: center; }
     .unit-holder .unit45 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit46 {
-    padding-top: 174px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit46 .info-box {
@@ -872,10 +870,10 @@ strong {
       .unit-holder .unit46 .info-box p {
         text-align: center; }
     .unit-holder .unit46 .dropdown-content {
-      top: 50px;
-      margin-top: 174px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit47 {
-    padding-top: 174px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit47 .info-box {
@@ -888,10 +886,10 @@ strong {
       .unit-holder .unit47 .info-box p {
         text-align: center; }
     .unit-holder .unit47 .dropdown-content {
-      top: 50px;
-      margin-top: 174px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit48 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit48 .info-box {
@@ -904,10 +902,10 @@ strong {
       .unit-holder .unit48 .info-box p {
         text-align: center; }
     .unit-holder .unit48 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit49 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit49 .info-box {
@@ -920,10 +918,10 @@ strong {
       .unit-holder .unit49 .info-box p {
         text-align: center; }
     .unit-holder .unit49 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit50 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit50 .info-box {
@@ -936,10 +934,10 @@ strong {
       .unit-holder .unit50 .info-box p {
         text-align: center; }
     .unit-holder .unit50 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit51 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit51 .info-box {
@@ -952,10 +950,10 @@ strong {
       .unit-holder .unit51 .info-box p {
         text-align: center; }
     .unit-holder .unit51 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit52 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit52 .info-box {
@@ -968,10 +966,10 @@ strong {
       .unit-holder .unit52 .info-box p {
         text-align: center; }
     .unit-holder .unit52 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit53 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit53 .info-box {
@@ -984,10 +982,10 @@ strong {
       .unit-holder .unit53 .info-box p {
         text-align: center; }
     .unit-holder .unit53 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit54 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit54 .info-box {
@@ -1000,10 +998,10 @@ strong {
       .unit-holder .unit54 .info-box p {
         text-align: center; }
     .unit-holder .unit54 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit55 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit55 .info-box {
@@ -1016,10 +1014,10 @@ strong {
       .unit-holder .unit55 .info-box p {
         text-align: center; }
     .unit-holder .unit55 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit56 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit56 .info-box {
@@ -1032,10 +1030,10 @@ strong {
       .unit-holder .unit56 .info-box p {
         text-align: center; }
     .unit-holder .unit56 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit57 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit57 .info-box {
@@ -1048,10 +1046,10 @@ strong {
       .unit-holder .unit57 .info-box p {
         text-align: center; }
     .unit-holder .unit57 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit58 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit58 .info-box {
@@ -1064,10 +1062,10 @@ strong {
       .unit-holder .unit58 .info-box p {
         text-align: center; }
     .unit-holder .unit58 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit59 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit59 .info-box {
@@ -1080,10 +1078,10 @@ strong {
       .unit-holder .unit59 .info-box p {
         text-align: center; }
     .unit-holder .unit59 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit60 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit60 .info-box {
@@ -1096,10 +1094,10 @@ strong {
       .unit-holder .unit60 .info-box p {
         text-align: center; }
     .unit-holder .unit60 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit61 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit61 .info-box {
@@ -1112,8 +1110,8 @@ strong {
       .unit-holder .unit61 .info-box p {
         text-align: center; }
     .unit-holder .unit61 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit62 {
     padding-top: 140px;
     position: relative;
@@ -1131,7 +1129,7 @@ strong {
       top: 50px;
       margin-top: 140px; }
   .unit-holder .unit63 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit63 .info-box {
@@ -1144,10 +1142,10 @@ strong {
       .unit-holder .unit63 .info-box p {
         text-align: center; }
     .unit-holder .unit63 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit64 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit64 .info-box {
@@ -1160,10 +1158,10 @@ strong {
       .unit-holder .unit64 .info-box p {
         text-align: center; }
     .unit-holder .unit64 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit65 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit65 .info-box {
@@ -1176,10 +1174,10 @@ strong {
       .unit-holder .unit65 .info-box p {
         text-align: center; }
     .unit-holder .unit65 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit66 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit66 .info-box {
@@ -1192,10 +1190,10 @@ strong {
       .unit-holder .unit66 .info-box p {
         text-align: center; }
     .unit-holder .unit66 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit67 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit67 .info-box {
@@ -1208,10 +1206,10 @@ strong {
       .unit-holder .unit67 .info-box p {
         text-align: center; }
     .unit-holder .unit67 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit68 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit68 .info-box {
@@ -1224,10 +1222,10 @@ strong {
       .unit-holder .unit68 .info-box p {
         text-align: center; }
     .unit-holder .unit68 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit69 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit69 .info-box {
@@ -1240,10 +1238,10 @@ strong {
       .unit-holder .unit69 .info-box p {
         text-align: center; }
     .unit-holder .unit69 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit70 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit70 .info-box {
@@ -1256,10 +1254,10 @@ strong {
       .unit-holder .unit70 .info-box p {
         text-align: center; }
     .unit-holder .unit70 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit71 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit71 .info-box {
@@ -1272,10 +1270,10 @@ strong {
       .unit-holder .unit71 .info-box p {
         text-align: center; }
     .unit-holder .unit71 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit72 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit72 .info-box {
@@ -1288,10 +1286,10 @@ strong {
       .unit-holder .unit72 .info-box p {
         text-align: center; }
     .unit-holder .unit72 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit73 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit73 .info-box {
@@ -1304,10 +1302,10 @@ strong {
       .unit-holder .unit73 .info-box p {
         text-align: center; }
     .unit-holder .unit73 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit74 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit74 .info-box {
@@ -1320,8 +1318,8 @@ strong {
       .unit-holder .unit74 .info-box p {
         text-align: center; }
     .unit-holder .unit74 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit75 {
     padding-top: 140px;
     position: relative;
@@ -1339,7 +1337,7 @@ strong {
       top: 50px;
       margin-top: 140px; }
   .unit-holder .unit76 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit76 .info-box {
@@ -1352,10 +1350,10 @@ strong {
       .unit-holder .unit76 .info-box p {
         text-align: center; }
     .unit-holder .unit76 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit77 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit77 .info-box {
@@ -1368,10 +1366,10 @@ strong {
       .unit-holder .unit77 .info-box p {
         text-align: center; }
     .unit-holder .unit77 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit78 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit78 .info-box {
@@ -1384,10 +1382,10 @@ strong {
       .unit-holder .unit78 .info-box p {
         text-align: center; }
     .unit-holder .unit78 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit79 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit79 .info-box {
@@ -1400,10 +1398,10 @@ strong {
       .unit-holder .unit79 .info-box p {
         text-align: center; }
     .unit-holder .unit79 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit80 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit80 .info-box {
@@ -1416,10 +1414,10 @@ strong {
       .unit-holder .unit80 .info-box p {
         text-align: center; }
     .unit-holder .unit80 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit81 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit81 .info-box {
@@ -1432,10 +1430,10 @@ strong {
       .unit-holder .unit81 .info-box p {
         text-align: center; }
     .unit-holder .unit81 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit82 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .unit82 .info-box {
@@ -1448,10 +1446,10 @@ strong {
       .unit-holder .unit82 .info-box p {
         text-align: center; }
     .unit-holder .unit82 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .unit83 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .unit83 .info-box {
@@ -1464,8 +1462,8 @@ strong {
       .unit-holder .unit83 .info-box p {
         text-align: center; }
     .unit-holder .unit83 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
     .unit-holder .unit83 h2 {
       font-size: 21px;
       padding-top: 20px;
@@ -1486,10 +1484,10 @@ strong {
       .unit-holder .vs-unit1 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit1 .dropdown-content {
-      top: 50px;
-      margin-top: 180px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit2 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit2 .info-box {
@@ -1502,10 +1500,10 @@ strong {
       .unit-holder .vs-unit2 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit2 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit3 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit3 .info-box {
@@ -1518,10 +1516,10 @@ strong {
       .unit-holder .vs-unit3 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit3 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit4 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit4 .info-box {
@@ -1534,10 +1532,10 @@ strong {
       .unit-holder .vs-unit4 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit4 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit5 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit5 .info-box {
@@ -1550,10 +1548,10 @@ strong {
       .unit-holder .vs-unit5 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit5 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit6 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit6 .info-box {
@@ -1566,10 +1564,10 @@ strong {
       .unit-holder .vs-unit6 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit6 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit7 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit7 .info-box {
@@ -1582,10 +1580,10 @@ strong {
       .unit-holder .vs-unit7 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit7 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit8 {
-    padding-top: 140px;
+    padding-top: 63px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit8 .info-box {
@@ -1598,10 +1596,10 @@ strong {
       .unit-holder .vs-unit8 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit8 .dropdown-content {
-      top: 50px;
-      margin-top: 140px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit9 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit9 .info-box {
@@ -1614,10 +1612,10 @@ strong {
       .unit-holder .vs-unit9 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit9 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit10 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit10 .info-box {
@@ -1630,10 +1628,10 @@ strong {
       .unit-holder .vs-unit10 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit10 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit11 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit11 .info-box {
@@ -1646,10 +1644,10 @@ strong {
       .unit-holder .vs-unit11 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit11 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit12 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit12 .info-box {
@@ -1662,10 +1660,10 @@ strong {
       .unit-holder .vs-unit12 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit12 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit13 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit13 .info-box {
@@ -1678,10 +1676,10 @@ strong {
       .unit-holder .vs-unit13 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit13 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit14 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit14 .info-box {
@@ -1694,10 +1692,10 @@ strong {
       .unit-holder .vs-unit14 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit14 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit15 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit15 .info-box {
@@ -1710,10 +1708,10 @@ strong {
       .unit-holder .vs-unit15 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit15 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit16 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit16 .info-box {
@@ -1726,10 +1724,10 @@ strong {
       .unit-holder .vs-unit16 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit16 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit17 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit17 .info-box {
@@ -1742,10 +1740,10 @@ strong {
       .unit-holder .vs-unit17 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit17 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit18 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit18 .info-box {
@@ -1758,10 +1756,10 @@ strong {
       .unit-holder .vs-unit18 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit18 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .vs-unit19 {
-    padding-top: 153px;
+    padding-top: 78px;
     position: relative;
     width: 100%; }
     .unit-holder .vs-unit19 .info-box {
@@ -1774,8 +1772,8 @@ strong {
       .unit-holder .vs-unit19 .info-box p {
         text-align: center; }
     .unit-holder .vs-unit19 .dropdown-content {
-      top: 50px;
-      margin-top: 153px; }
+      margin-top: 60px;
+      top: 50px; }
     .unit-holder .vs-unit19 h2 {
       font-size: 21px;
       padding-top: 20px;
@@ -1783,7 +1781,7 @@ strong {
     .unit-holder .vs-unit19 .section-box {
       top: 560px; }
   .unit-holder .hp-unit1 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .hp-unit1 .info-box {
@@ -1796,10 +1794,10 @@ strong {
       .unit-holder .hp-unit1 .info-box p {
         text-align: center; }
     .unit-holder .hp-unit1 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
   .unit-holder .hp-unit2 {
-    padding-top: 175px;
+    padding-top: 83px;
     position: relative;
     width: 100%; }
     .unit-holder .hp-unit2 .info-box {
@@ -1812,18 +1810,14 @@ strong {
       .unit-holder .hp-unit2 .info-box p {
         text-align: center; }
     .unit-holder .hp-unit2 .dropdown-content {
-      top: 50px;
-      margin-top: 175px; }
+      margin-top: 60px;
+      top: 50px; }
 
 .dropdown-content {
-  /*padding-top: 13px;*/
-  /*position: unset;*/
   background: rgba(0, 0, 0, 0.6);
   width: 900px;
   height: 138px;
-  position-top: 20px;
-  /*top: 160px;*/
-  /*left: -9px;*/ }
+  margin-top: 10px; }
   .dropdown-content::after {
     clear: both;
     content: "";

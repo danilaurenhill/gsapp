@@ -1,13 +1,9 @@
 .dropdown-content {
-  /*padding-top: 13px;*/
   @include clearfix;
-  /*position: unset;*/
   background: rgba(black, 0.6);
   width: 900px;
   height: 138px;
-  position-top: 20px;
-  /*top: 160px;*/
-  /*left: -9px;*/
+  margin-top: 10px;
   h5 {
     @include clearfix;
     color: $light-green;
