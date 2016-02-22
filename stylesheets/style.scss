@@ -2,6 +2,12 @@
 @import "neat/neat";
 @import "base";
 @import "nav";
-@import "footer";
 @import "layout";
-@import "dropdown"
+@import "dropdown";
+@import "footer";
+
+@media screen and (max-width: 750px) {
+  @import "nav_1px";  
+  @import "layout_1px";
+  @import "dropdown_1px";
+}
