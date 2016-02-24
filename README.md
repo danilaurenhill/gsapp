@@ -1,22 +1,16 @@
 ** DOCUMENTATION **
 
-index1.html - will eventually be changed to index.html
-  -  Holds main info shown on the page, 
-  -  content lives here: links, course names, section no… 
-
 Changing picture link:
-  - locate and delete old jpg file from images folder
-  - add new jpg file to images folder, (use finder)
-  - in index1.html locate unit# of image -> switch old .jpg with new .jpg 
+  - delete old jpg from images folder
+  - add new jpg
+  - adjust content in index.html 
 
 Changing syllabi links:
-  - locate and delete old pdf files from data folder(WIP)
-  - add new pdf file to data folder
-  - in index1 locate unit# of syllabus -> switch old .pdf with new .pdf
+  - See above ^
 
-Stylesheets folder houses all stylistic aspects of the 2016 GSAPP site:
+Stylesheets folder - various scss files:
 
-base.scss holds basic styles for different text sizes
+base.scss 
   - includes h2, h3, h5, a, p, and glyphicon
 
 layout.scss holds styling for general structure of site
