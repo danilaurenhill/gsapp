@@ -4,6 +4,16 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: #E4E4E4; }
+
 h1 {
   font-size: 24px;
   font-weight: 600; }
@@ -51,32 +61,18 @@ p {
   .glyphicon:hover {
     color: #337ab7; }
 
- /* Sticky footer styles
-}
-}
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%; }
-
-.btn-primary {
-  background-color: #252525; }
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 40px;
-  font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden;
-  background-color: #E4E4E4; }
-
-h5 {
-  font-family: 'Open Sans', sans-serif; }
-
-strong {
-  font-family: 'Open Sans', sans-serif; }
-
-.box {
-  border: 2px #BBB solid; }
+.info-box {
+  background-color: white;
+  margin: -16.5px;
+  padding: 10px;
+  width: 900px;
+  left: -20px;
+  height: 70px; }
+  .info-box p {
+    text-align: center; }
+  .info-box .dropdown-content {
+    margin-top: 60px;
+    top: 50px; }
 
 .nav {
   z-index: 7;
@@ -119,17 +115,6 @@ strong {
         border: 1px solid #ccc;
         border-radius: 4px; }
 
-.footer {
-  display: block;
-  position: fixed;
-  left: 0px;
-  width: 100%;
-  bottom: 0px;
-  height: 40px;
-  background-color: #222;
-  text-align: center;
-  padding: 10px; }
-
 #arch {
   left: -5px; }
 
@@ -137,1333 +122,171 @@ strong {
   z-index: 1;
   position: absolute; }
   .unit-holder .unit1 {
-    padding-top: 60px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit1 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit1 .info-box p {
-        text-align: center; }
-    .unit-holder .unit1 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 60px; }
   .unit-holder .unit2 {
-    padding-top: 20px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit2 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit2 .info-box p {
-        text-align: center; }
-    .unit-holder .unit2 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 20px; }
   .unit-holder .unit3 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit3 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit3 .info-box p {
-        text-align: center; }
-    .unit-holder .unit3 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit4 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit4 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit4 .info-box p {
-        text-align: center; }
-    .unit-holder .unit4 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit5 {
-    padding-top: 76px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit5 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit5 .info-box p {
-        text-align: center; }
-    .unit-holder .unit5 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 76px; }
   .unit-holder .unit6 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit6 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit6 .info-box p {
-        text-align: center; }
-    .unit-holder .unit6 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit7 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit7 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit7 .info-box p {
-        text-align: center; }
-    .unit-holder .unit7 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit8 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit8 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit8 .info-box p {
-        text-align: center; }
-    .unit-holder .unit8 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit9 {
-    padding-top: 12px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit9 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit9 .info-box p {
-        text-align: center; }
-    .unit-holder .unit9 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 12px; }
   .unit-holder .unit10 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit10 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit10 .info-box p {
-        text-align: center; }
-    .unit-holder .unit10 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit11 {
-    padding-top: 76px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit11 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit11 .info-box p {
-        text-align: center; }
-    .unit-holder .unit11 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 76px; }
   .unit-holder .unit12 {
-    padding-top: 36px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit12 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit12 .info-box p {
-        text-align: center; }
-    .unit-holder .unit12 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 36px; }
   .unit-holder .unit13 {
-    padding-top: 56px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit13 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit13 .info-box p {
-        text-align: center; }
-    .unit-holder .unit13 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 56px; }
   .unit-holder .unit14 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit14 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit14 .info-box p {
-        text-align: center; }
-    .unit-holder .unit14 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit15 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit15 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit15 .info-box p {
-        text-align: center; }
-    .unit-holder .unit15 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit16 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit16 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit16 .info-box p {
-        text-align: center; }
-    .unit-holder .unit16 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit17 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit17 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit17 .info-box p {
-        text-align: center; }
-    .unit-holder .unit17 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit18 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit18 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit18 .info-box p {
-        text-align: center; }
-    .unit-holder .unit18 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit19 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit19 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit19 .info-box p {
-        text-align: center; }
-    .unit-holder .unit19 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit20 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit20 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit20 .info-box p {
-        text-align: center; }
-    .unit-holder .unit20 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit21 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit21 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit21 .info-box p {
-        text-align: center; }
-    .unit-holder .unit21 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit22 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit22 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit22 .info-box p {
-        text-align: center; }
-    .unit-holder .unit22 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit23 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit23 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit23 .info-box p {
-        text-align: center; }
-    .unit-holder .unit23 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit24 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit24 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit24 .info-box p {
-        text-align: center; }
-    .unit-holder .unit24 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit25 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit25 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit25 .info-box p {
-        text-align: center; }
-    .unit-holder .unit25 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit26 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit26 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit26 .info-box p {
-        text-align: center; }
-    .unit-holder .unit26 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit27 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit27 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit27 .info-box p {
-        text-align: center; }
-    .unit-holder .unit27 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit28 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit28 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit28 .info-box p {
-        text-align: center; }
-    .unit-holder .unit28 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit29 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit29 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit29 .info-box p {
-        text-align: center; }
-    .unit-holder .unit29 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit30 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit30 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit30 .info-box p {
-        text-align: center; }
-    .unit-holder .unit30 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit31 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit31 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit31 .info-box p {
-        text-align: center; }
-    .unit-holder .unit31 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit32 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit32 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit32 .info-box p {
-        text-align: center; }
-    .unit-holder .unit32 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit33 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit33 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit33 .info-box p {
-        text-align: center; }
-    .unit-holder .unit33 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit34 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit34 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit34 .info-box p {
-        text-align: center; }
-    .unit-holder .unit34 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit35 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit35 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit35 .info-box p {
-        text-align: center; }
-    .unit-holder .unit35 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit36 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit36 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit36 .info-box p {
-        text-align: center; }
-    .unit-holder .unit36 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit37 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit37 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit37 .info-box p {
-        text-align: center; }
-    .unit-holder .unit37 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit38 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit38 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit38 .info-box p {
-        text-align: center; }
-    .unit-holder .unit38 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit39 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit39 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit39 .info-box p {
-        text-align: center; }
-    .unit-holder .unit39 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit40 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit40 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit40 .info-box p {
-        text-align: center; }
-    .unit-holder .unit40 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit41 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit41 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit41 .info-box p {
-        text-align: center; }
-    .unit-holder .unit41 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit42 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit42 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit42 .info-box p {
-        text-align: center; }
-    .unit-holder .unit42 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit43 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit43 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit43 .info-box p {
-        text-align: center; }
-    .unit-holder .unit43 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit44 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit44 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit44 .info-box p {
-        text-align: center; }
-    .unit-holder .unit44 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit45 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit45 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit45 .info-box p {
-        text-align: center; }
-    .unit-holder .unit45 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit46 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit46 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit46 .info-box p {
-        text-align: center; }
-    .unit-holder .unit46 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit47 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit47 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit47 .info-box p {
-        text-align: center; }
-    .unit-holder .unit47 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit48 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit48 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit48 .info-box p {
-        text-align: center; }
-    .unit-holder .unit48 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit49 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit49 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit49 .info-box p {
-        text-align: center; }
-    .unit-holder .unit49 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit50 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit50 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit50 .info-box p {
-        text-align: center; }
-    .unit-holder .unit50 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit51 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit51 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit51 .info-box p {
-        text-align: center; }
-    .unit-holder .unit51 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit52 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit52 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit52 .info-box p {
-        text-align: center; }
-    .unit-holder .unit52 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit53 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit53 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit53 .info-box p {
-        text-align: center; }
-    .unit-holder .unit53 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit54 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit54 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit54 .info-box p {
-        text-align: center; }
-    .unit-holder .unit54 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit55 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit55 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit55 .info-box p {
-        text-align: center; }
-    .unit-holder .unit55 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit56 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit56 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit56 .info-box p {
-        text-align: center; }
-    .unit-holder .unit56 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit57 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit57 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit57 .info-box p {
-        text-align: center; }
-    .unit-holder .unit57 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit58 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit58 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit58 .info-box p {
-        text-align: center; }
-    .unit-holder .unit58 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit59 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit59 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit59 .info-box p {
-        text-align: center; }
-    .unit-holder .unit59 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit60 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit60 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit60 .info-box p {
-        text-align: center; }
-    .unit-holder .unit60 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit61 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit61 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit61 .info-box p {
-        text-align: center; }
-    .unit-holder .unit61 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit62 {
-    padding-top: 140px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit62 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit62 .info-box p {
-        text-align: center; }
-    .unit-holder .unit62 .dropdown-content {
-      top: 50px;
-      margin-top: 140px; }
+    padding-top: 140px; }
   .unit-holder .unit63 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit63 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit63 .info-box p {
-        text-align: center; }
-    .unit-holder .unit63 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit64 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit64 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit64 .info-box p {
-        text-align: center; }
-    .unit-holder .unit64 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit65 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit65 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit65 .info-box p {
-        text-align: center; }
-    .unit-holder .unit65 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit66 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit66 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit66 .info-box p {
-        text-align: center; }
-    .unit-holder .unit66 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit67 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit67 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit67 .info-box p {
-        text-align: center; }
-    .unit-holder .unit67 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit68 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit68 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit68 .info-box p {
-        text-align: center; }
-    .unit-holder .unit68 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit69 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit69 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit69 .info-box p {
-        text-align: center; }
-    .unit-holder .unit69 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit70 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit70 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit70 .info-box p {
-        text-align: center; }
-    .unit-holder .unit70 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit71 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit71 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit71 .info-box p {
-        text-align: center; }
-    .unit-holder .unit71 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit72 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit72 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit72 .info-box p {
-        text-align: center; }
-    .unit-holder .unit72 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit73 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit73 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit73 .info-box p {
-        text-align: center; }
-    .unit-holder .unit73 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit74 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit74 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit74 .info-box p {
-        text-align: center; }
-    .unit-holder .unit74 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit75 {
-    padding-top: 140px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit75 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit75 .info-box p {
-        text-align: center; }
-    .unit-holder .unit75 .dropdown-content {
-      top: 50px;
-      margin-top: 140px; }
+    padding-top: 64px; }
   .unit-holder .unit76 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit76 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit76 .info-box p {
-        text-align: center; }
-    .unit-holder .unit76 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit77 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit77 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit77 .info-box p {
-        text-align: center; }
-    .unit-holder .unit77 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit78 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit78 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit78 .info-box p {
-        text-align: center; }
-    .unit-holder .unit78 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit79 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit79 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit79 .info-box p {
-        text-align: center; }
-    .unit-holder .unit79 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit80 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit80 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit80 .info-box p {
-        text-align: center; }
-    .unit-holder .unit80 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit81 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit81 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit81 .info-box p {
-        text-align: center; }
-    .unit-holder .unit81 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .unit82 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit82 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit82 .info-box p {
-        text-align: center; }
-    .unit-holder .unit82 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .unit83 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .unit83 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .unit83 .info-box p {
-        text-align: center; }
-    .unit-holder .unit83 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
     .unit-holder .unit83 h2 {
       font-size: 21px;
       padding-top: 20px;
@@ -1471,309 +294,43 @@ strong {
     .unit-holder .unit83 .sections {
       top: 160px; }
   .unit-holder .vs-unit1 {
-    padding-top: 180px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit1 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit1 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit1 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 180px; }
   .unit-holder .vs-unit2 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit2 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit2 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit2 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit3 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit3 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit3 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit3 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit4 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit4 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit4 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit4 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit5 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit5 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit5 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit5 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit6 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit6 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit6 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit6 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit7 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit7 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit7 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit7 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit8 {
-    padding-top: 63px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit8 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit8 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit8 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 63px; }
   .unit-holder .vs-unit9 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit9 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit9 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit9 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit10 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit10 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit10 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit10 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit11 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit11 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit11 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit11 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit12 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit12 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit12 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit12 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .vs-unit13 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit13 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit13 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit13 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit14 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit14 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit14 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit14 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit15 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit15 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit15 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit15 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit16 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit16 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit16 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit16 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit17 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit17 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit17 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit17 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit18 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit18 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit18 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit18 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
   .unit-holder .vs-unit19 {
-    padding-top: 78px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .vs-unit19 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .vs-unit19 .info-box p {
-        text-align: center; }
-    .unit-holder .vs-unit19 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 78px; }
     .unit-holder .vs-unit19 h2 {
       font-size: 21px;
       padding-top: 20px;
@@ -1781,37 +338,9 @@ strong {
     .unit-holder .vs-unit19 .section-box {
       top: 560px; }
   .unit-holder .hp-unit1 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .hp-unit1 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .hp-unit1 .info-box p {
-        text-align: center; }
-    .unit-holder .hp-unit1 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
   .unit-holder .hp-unit2 {
-    padding-top: 83px;
-    position: relative;
-    width: 100%; }
-    .unit-holder .hp-unit2 .info-box {
-      margin: -16.5px;
-      background-color: white;
-      padding: 10px;
-      width: 900px;
-      left: -20px;
-      height: 70px; }
-      .unit-holder .hp-unit2 .info-box p {
-        text-align: center; }
-    .unit-holder .hp-unit2 .dropdown-content {
-      margin-top: 60px;
-      top: 50px; }
+    padding-top: 83px; }
 
 .dropdown-content {
   background: rgba(0, 0, 0, 0.6);
@@ -1843,17 +372,21 @@ strong {
       color: #337ab7;
       text-decoration: none; }
 
-/*.dropdown:active .dropdown-content {
-  display: block;
-}*/
-.info-title {
-  border-right: 1px solid #A4C5A1; }
-  .info-title:last-child {
-    border-right: none; }
+.footer {
+  display: inline-block;
+  position: fixed;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 40px;
+  background-color: #222;
+  text-align: center;
+  padding: 10px; }
 
-/*.content {
-  top: 10px;
-  left: 38%;
+/*@media screen and (max-width: 750px) {
+  @import "nav_1px";  
+  @import "layout_1px";
+  @import "dropdown_1px";
 }*/
 
 /*# sourceMappingURL=style.css.map */
