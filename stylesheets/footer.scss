@@ -1,9 +1,9 @@
 .scroll-top {
   display: inline-block;
   position: relative;
-  top: 20px;
+  top: 9500px;
   color: red;
-/*  visibility: hidden;
+  visibility: hidden;
   overflow: hidden;
   text-align: center;
   z-index: 99999999;
@@ -22,9 +22,9 @@
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;*/
+  transition: all 0.5s ease-in-out;
 }
-/*.scroll-top:hover {
+.scroll-top:hover {
   background-color: #888888;
 }
 .scroll-top.show {
@@ -34,7 +34,7 @@
 }
 .scroll-top i.fa {
   line-height: inherit;
-}*/
+}
 
 
 footer {
