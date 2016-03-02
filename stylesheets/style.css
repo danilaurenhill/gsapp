@@ -74,6 +74,9 @@ p {
     margin-top: 60px;
     top: 50px; }
 
+a.fish {
+  text-decoration: none; }
+
 .nav {
   z-index: 7;
   background: rgba(255, 255, 255, 0.9);
@@ -449,6 +452,7 @@ p {
     /*padding-top: 83px;*/ }
 
 .dropdown-content {
+  display: none;
   background: rgba(0, 0, 0, 0.6);
   width: 900px;
   height: 70px;
