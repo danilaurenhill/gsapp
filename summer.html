@@ -13,14 +13,14 @@
     <!-- Updated by Danielle Hill (danilaurenhill) -->
   </head>
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
-  <script>
-  function hideshow(frog) {
+//   <script>
+//   function hideshow(content1) {
 
-    if (!document.getElementById) return
-    if (frog.style.display == "none") frog.style.display = "block"
-    else frog.style.display = "none"
-}
-</script>
+//     if (!document.getElementById) return
+//     if (content1.style.display == "none") content1.style.display = "block"
+//     else content1.style.display = "none"
+// }
+// </script>
  
 
 <body ng-app="mainApp">
@@ -56,7 +56,7 @@
       <div class="unit-holder">  
         <div class="col-xs-12 unit1">
           <div class="info-box">
-            <a class="fish" href="javascript:hideshow(document.getElementById('frog'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+            <a href="javascript:hideshow(document.getElementById('content1'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
             <div class="col-xs-1 course-num"><p>A44202</p></div>
             <div class="col-xs-2 title"><p>METROPOLIS</p></div>
             <div class="col-xs-1 instructor"><p>ENRIQUE WALKER</p></div>
@@ -66,7 +66,7 @@
               <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
               <div class="col-xs-3 call-num"><p>77096</p></div>
             </div>
-          <div class="dropdown-content" id="frog">
+          <div class="dropdown-content" id="content1">
             <div class="col-sm-12">
               <div class="col-sm-4">
                 <h4>Available Syllabi</h4>
@@ -91,7 +91,7 @@
       </div>
       <div class="col-xs-12 unit2">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content2'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4404</p></div>
           <div class="col-xs-2 title"><p>GLOBAL CITIES SEMINAR</p></div>
           <div class="col-xs-1 instructor"><p>GRAHAME SHANE</p></div>
@@ -101,7 +101,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
             <div class="col-xs-3 call-num"><p>null</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content2">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -126,7 +126,7 @@
       </div>
       <div class="col-xs-12 unit3">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content3'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4488</p></div>
           <div class="col-xs-2 title"><p>ARGUMENTS</p></div>
           <div class="col-xs-1 instructor"><p>ENRIQUE WALKER</p></div>
@@ -136,7 +136,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
             <div class="col-xs-3 call-num"><p>null</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content3">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -159,9 +159,9 @@
         </div>
       </div>
       </div>
-      <div class="col-xs-12 unit4">
+      <div class="col-xs-12 unit4" id="content4">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content4'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4512</p></div>
           <div class="col-xs-2 title"><p>Typologies - DESIGN SEMINAR</p></div>
           <div class="col-xs-1 instructor"><p>HILARY SAMPLE</p></div>
@@ -196,7 +196,7 @@
       </div>
       <div class="col-xs-12 unit5">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content5'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4518</p></div>
           <div class="col-xs-2 title"><p>Envelopes - DESIGN SEMINAR</p></div>
           <div class="col-xs-1 instructor"><p>PHU HOANG</p></div>
@@ -206,7 +206,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
             <div class="col-xs-3 call-num"><p>69692</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content5">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -231,7 +231,7 @@
       </div>
       <div class="col-xs-12 unit6">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content6'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4528</p></div>
           <div class="col-xs-2 title"><p>Global Practice - DESIGN SEMINAR</p></div>
           <div class="col-xs-1 instructor"><p>DAN WOOD</p></div>
@@ -241,7 +241,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
             <div class="col-xs-3 call-num"><p>28780</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content6">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -266,7 +266,7 @@
       </div>
       <div class="col-xs-12 unit7">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content7'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4528</p></div>
           <div class="col-xs-2 title"><p>DIGITAL MODELING For UD</p></div>
           <div class="col-xs-1 instructor"><p>PHU DUONG</p></div>
@@ -276,7 +276,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
             <div class="col-xs-3 call-num"><p>22546</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content7">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -301,7 +301,7 @@
       </div>
       <div class="col-xs-12 unit8">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content8'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>TUTORIAL</p></div>
           <div class="col-xs-2 title"><p>DIGITAL MODELING FOR UD -LAB TUTORIAL</p></div>
           <div class="col-xs-1 instructor"><p>BEN MARTINSON</p></div>
@@ -311,7 +311,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>0 points</p></div>
             <div class="col-xs-3 call-num"><p>92196</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content8">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -336,7 +336,7 @@
       </div>
       <div class="col-xs-12 unit9">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content9'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4684</p></div>
           <div class="col-xs-2 title"><p>ARCHITECTURAL + THE SUSTAINABLE BUILT ENVIRONMENT</p></div>
           <div class="col-xs-1 instructor"><p>DAVID NORRIS</p></div>
@@ -346,7 +346,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
             <div class="col-xs-3 call-num"><p>64029</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content9">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -371,7 +371,7 @@
       </div>
       <div class="col-xs-12 unit10">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content10'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4685</p></div>
           <div class="col-xs-2 title"><p>URBAN THEORY + DESIGN IN POST INDUSTRIAL AGE</p></div>
           <div class="col-xs-1 instructor"><p>NOAH CHASIN</p></div>
@@ -381,7 +381,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
             <div class="col-xs-3 call-num"><p>27696</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content10">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -406,7 +406,7 @@
       </div>
       <div class="col-xs-12 unit11">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content11'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A6824</p></div>
           <div class="col-xs-2 title"><p>READING NY URBANISM</p></div>
           <div class="col-xs-1 instructor"><p>MICHAEL SZIVIOS</p></div>
@@ -416,7 +416,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>3 points</p></div>
             <div class="col-xs-3 call-num"><p>92066</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content11">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -441,7 +441,7 @@
       </div>
       <div class="col-xs-12 unit12">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content12'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A6849</p></div>
           <div class="col-xs-2 title"><p>URBAN DESIGN STUDIO</p></div>
           <div class="col-xs-1 instructor"><p>KAJA KUHL</p></div>
@@ -451,7 +451,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>9 points</p></div>
             <div class="col-xs-3 call-num"><p>27696</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content12">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -476,7 +476,7 @@
       </div>
       <div class="col-xs-12 unit13">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content13'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A6853</p></div>
           <div class="col-xs-2 title"><p>ADV ARCH DESIGN STUDIO</p></div>
           <div class="col-xs-1 instructor"><p>DANIELLE SMOLLER</p></div>
@@ -486,7 +486,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>9 points</p></div>
             <div class="col-xs-3 call-num"><p>94693</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content13">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -511,7 +511,7 @@
       </div>
       <div class="col-xs-12 unit14">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content14'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A4853</p></div>
           <div class="col-xs-2 title"><p>ADV ARCH TUTORIAL</p></div>
           <div class="col-xs-1 instructor"><p>null</p></div>
@@ -521,7 +521,7 @@
             <div class="col-xs-9 sess-points"><p>FULL SEMESTER<br>0 points</p></div>
             <div class="col-xs-3 call-num"><p>null</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content14">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -546,7 +546,7 @@
       </div>
       <div class="col-xs-12 unit15">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content15'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S001</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>YANNIS AESOPOS</p></div>
@@ -556,7 +556,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>63246</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content15">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -581,7 +581,7 @@
       </div>
       <div class="col-xs-12 unit16">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content16'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S002</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>JUAN HERREROS</p></div>
@@ -591,7 +591,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>77097</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content16">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -616,7 +616,7 @@
       </div>
       <div class="col-xs-12 unit17" style="padding-top: 20px;">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content17'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S003</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>PHU HOANG</p></div>
@@ -626,7 +626,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>81296</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content17">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -651,7 +651,7 @@
       </div>
       <div class="col-xs-12 unit18">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content18'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S004</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>ANDRES JAQUE</p></div>
@@ -661,7 +661,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>82546</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content18">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -686,7 +686,7 @@
       </div>
       <div class="col-xs-12 unit19">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content19'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S005</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>JEFFREY JOHNSON</p></div>
@@ -696,7 +696,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>86996</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content19">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -721,7 +721,7 @@
       </div>
       <div class="col-xs-12 unit20">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content20'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S006</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>JING LIU</p></div>
@@ -731,7 +731,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>88146</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content20">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -756,7 +756,7 @@
       </div>
       <div class="col-xs-12 unit21">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content21'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S007</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>JOAQUIM MORENO</p></div>
@@ -766,7 +766,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>92796</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content21">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -791,7 +791,7 @@
       </div>
       <div class="col-xs-12 unit22">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content22'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S008</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>MARK RAKATANSKY</p></div>
@@ -801,7 +801,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>96496</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content22">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -826,7 +826,7 @@
       </div>
       <div class="col-xs-12 unit23">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content23'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S009</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>NONOKO UMEMOTO</p></div>
@@ -836,7 +836,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>98246</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content23">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -861,7 +861,7 @@
       </div>
       <div class="col-xs-12 unit24">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content24'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>S010</p></div>
           <div class="col-xs-2 title"><p>null</p></div>
           <div class="col-xs-1 instructor"><p>ERIC BUNGE + MIMI HOANG</p></div>
@@ -871,7 +871,7 @@
             <div class="col-xs-9 sess-points"><p>null</p></div>
             <div class="col-xs-3 call-num"><p>77279</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content24">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -896,7 +896,7 @@
       </div>
       <div class="col-xs-12 unit25">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content25'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A6900</p></div>
           <div class="col-xs-2 title"><p>RESEARCH</p></div>
           <div class="col-xs-1 instructor"><p>DANIELLE SMOLLER</p></div>
@@ -906,7 +906,7 @@
             <div class="col-xs-9 sess-points"><p>2-3 Points</p></div>
             <div class="col-xs-3 call-num"><p>17496</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content25">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -949,7 +949,7 @@
 
       <div class="col-xs-12 unit26">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content26'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P4310</p></div>
           <div class="col-xs-2 title"><p>REAL ESTATE FINANCE I</p></div>
           <div class="col-xs-1 instructor"><p>MANISH SRIVASTAVA</p></div>
@@ -959,7 +959,7 @@
             <div class="col-xs-9 sess-points"><p>4.5 Points</p></div>
             <div class="col-xs-3 call-num"><p>80941</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content26">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -984,7 +984,7 @@
       </div>
       <div class="col-xs-12 unit27">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content27'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6207</p></div>
           <div class="col-xs-2 title"><p>CORPORATE FINANCE AND ACCOUNTING</p></div>
           <div class="col-xs-1 instructor"><p>MANISH SRIVATAVA</p></div>
@@ -994,7 +994,7 @@
             <div class="col-xs-9 sess-points"><p>3 Points</p></div>
             <div class="col-xs-3 call-num"><p>89280</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content27">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1019,7 +1019,7 @@
       </div>
       <div class="col-xs-12 unit28">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content28'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6214</p></div>
           <div class="col-xs-2 title"><p>REAL ESTATE INVESTMENT ANALYSIS</p></div>
           <div class="col-xs-1 instructor"><p>FRANK GALLINELLI</p></div>
@@ -1029,7 +1029,7 @@
             <div class="col-xs-9 sess-points"><p>1.5 Points</p></div>
             <div class="col-xs-3 call-num"><p>25846</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content28">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1054,7 +1054,7 @@
       </div>
       <div class="col-xs-12 unit29">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content29'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6214</p></div>
           <div class="col-xs-2 title"><p>URBAN ECONOMICS</p></div>
           <div class="col-xs-1 instructor"><p>RYAN SEVERINO</p></div>
@@ -1064,7 +1064,7 @@
             <div class="col-xs-9 sess-points"><p>1.5 Points</p></div>
             <div class="col-xs-3 call-num"><p>62279</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content29">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1089,7 +1089,7 @@
       </div>
       <div class="col-xs-12 unit30">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content30'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6221</p></div>
           <div class="col-xs-2 title"><p>INTRO TO HOUSING</p></div>
           <div class="col-xs-1 instructor"><p>CHARLES LAVEN</p></div>
@@ -1099,7 +1099,7 @@
             <div class="col-xs-9 sess-points"><p>1.5 Points</p></div>
             <div class="col-xs-3 call-num"><p>11849</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content30">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1124,7 +1124,7 @@
       </div>
       <div class="col-xs-12 unit31">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content31'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6244</p></div>
           <div class="col-xs-2 title"><p>IN THE FIELD</p></div>
           <div class="col-xs-1 instructor"><p>MORRIS ADJMI</p></div>
@@ -1134,7 +1134,7 @@
             <div class="col-xs-9 sess-points"><p>1.5 Points</p></div>
             <div class="col-xs-3 call-num"><p>12030</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content31">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1159,7 +1159,7 @@
       </div>
       <div class="col-xs-12 unit32">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content32'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6272</p></div>
           <div class="col-xs-2 title"><p>HISTORY OF REAL ESTATE DEVELOPMENT</p></div>
           <div class="col-xs-1 instructor"><p>KATE ASCHER</p></div>
@@ -1169,7 +1169,7 @@
             <div class="col-xs-9 sess-points"><p>3 Points</p></div>
             <div class="col-xs-3 call-num"><p>62191</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content32">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1194,7 +1194,7 @@
       </div>
       <div class="col-xs-12 unit33">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content33'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6276</p></div>
           <div class="col-xs-2 title"><p>SKYSCRAPERS: CITIES IN THE SKY</p></div>
           <div class="col-xs-1 instructor"><p>KATE ASCHER</p></div>
@@ -1204,7 +1204,7 @@
             <div class="col-xs-9 sess-points"><p>1.5 Points</p></div>
             <div class="col-xs-3 call-num"><p>62191</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content33">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1229,7 +1229,7 @@
       </div>
       <div class="col-xs-12 unit34">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content34'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6352</p></div>
           <div class="col-xs-2 title"><p>MARKET ANALYSIS</p></div>
           <div class="col-xs-1 instructor"><p>RYAN LEVASSEUR + SHUPROTIM BHAUMIK</p></div>
@@ -1239,7 +1239,7 @@
             <div class="col-xs-9 sess-points"><p>3 Points</p></div>
             <div class="col-xs-3 call-num"><p>68396</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content34">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1264,7 +1264,7 @@
       </div>
       <div class="col-xs-12 unit35">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content35'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6367</p></div>
           <div class="col-xs-2 title"><p>THE TRANSACTION PROCESS: DEBT, EQUITY, AND THE ART OF NEGOTIATION</p></div>
           <div class="col-xs-1 instructor"><p>MITCHELL ADELSTEIN</p></div>
@@ -1274,7 +1274,7 @@
             <div class="col-xs-9 sess-points"><p>1.5 Points</p></div>
             <div class="col-xs-3 call-num"><p>95946</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content35">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1299,7 +1299,7 @@
       </div>
       <div class="col-xs-12 unit36">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content36'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6378</p></div>
           <div class="col-xs-2 title"><p>STUDIO: THE ART OF THE RFP RESPONSE</p></div>
           <div class="col-xs-1 instructor"><p>BRIAN LOUGHLIN</p></div>
@@ -1309,7 +1309,7 @@
             <div class="col-xs-9 sess-points"><p>1.5 Points</p></div>
             <div class="col-xs-3 call-num"><p>13496</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content36">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1334,7 +1334,7 @@
       </div>
       <div class="col-xs-12 unit37">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content37'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>P6769</p></div>
           <div class="col-xs-2 title"><p>THE ARCHITECTURE OF DEVELOPMENT</p></div>
           <div class="col-xs-1 instructor"><p>BROOKS MCDANIEL</p></div>
@@ -1344,7 +1344,7 @@
             <div class="col-xs-9 sess-points"><p>3 Points</p></div>
             <div class="col-xs-3 call-num"><p>83029</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content37">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
@@ -1384,7 +1384,7 @@
       </div>
       <div class="col-xs-12 unit38">
         <div class="info-box">
-          <a id="toggle"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
+          <a href="javascript:hideshow(document.getElementById('content38'))"><span class="col-xs-1 glyphicon glyphicon-collapse-down"></span></a>
           <div class="col-xs-1 course-num"><p>A1003</p></div>
           <div class="col-xs-2 title"><p>INTRO DESIGN STUD</p></div>
           <div class="col-xs-1 instructor"><p>DANIELLE SMOLLER</p></div>
@@ -1394,7 +1394,7 @@
             <div class="col-xs-9 sess-points"><p>3 Points</p></div>
             <div class="col-xs-3 call-num"><p>98747</p></div>
           </div>
-        <div class="dropdown-content">
+        <div class="dropdown-content" id="content38">
           <div class="col-sm-12">
             <div class="col-sm-4">
               <h4>Available Syllabi</h4>
