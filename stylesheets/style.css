@@ -1,62 +1,455 @@
-/*
-Error: Invalid CSS after "  }": expected "}", was ""
-        on line 378 of layout.scss
-        from line 5 of style.scss
+html {
+  box-sizing: border-box; }
 
-Backtrace:
-layout.scss:378
-style.scss:5
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:656:in `block'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/engine.rb:309:in `to_tree'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:88:in `block in with_import'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:88:in `with_import'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:291:in `call'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:291:in `_process_changes'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:255:in `block in _wait_for_changes'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:238:in `loop'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:238:in `_wait_for_changes'
-/Users/daniellehill/.rvm/gems/ruby-2.1.4/gems/listen-2.10.0/lib/listen/listener.rb:327:in `block in _start_wait_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  }\": expected \"}\", was \"\"\A         on line 378 of layout.scss\A         from line 5 of style.scss"; }
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  margin-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  background-color: #E4E4E4; }
+
+h1 {
+  font-size: 24px;
+  font-weight: 600; }
+
+h2 {
+  font-size: 18px;
+  font-weight: 400; }
+
+h3 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 4px; }
+
+h4 {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400; }
+
+h5 {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400; }
+
+h6 {
+  text-align: center;
+  font-size: 8px;
+  font-weight: 400; }
+  h6 a {
+    font-size: 10px; }
+
+a {
+  font-size: 9px;
+  font-weight: 400; }
+
+p {
+  font-size: 10px;
+  font-weight: 400; }
+
+.glyphicon {
+  color: black;
+  top: 3px;
+  left: -5px;
+  font-size: 24px; }
+  .glyphicon:hover {
+    color: #337ab7; }
+
+.info-box {
+  background-color: white;
+  margin: -16.5px;
+  padding: 10px;
+  width: 900px;
+  left: -20px;
+  height: 70px; }
+  .info-box p {
+    text-align: center; }
+  .info-box .dropdown-content {
+    margin-top: 60px;
+    top: 50px; }
+
+a.fish {
+  text-decoration: none; }
+
+.nav {
+  z-index: 7;
+  background: rgba(255, 255, 255, 0.9);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed; }
+
+.navbar {
+  position: relative;
+  padding-left: 10%;
+  top: -5px; }
+
+.container {
+  z-index: 2;
+  position: absolute;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%; }
+  .container h2 {
+    position: relative;
+    top: 155px;
+    left: 80px; }
+  .container .row {
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10%; }
+    .container .row .search-wrapper {
+      padding-bottom: 50px; }
+      .container .row .search-wrapper .form-control {
+        width: 100%;
+        height: 34px;
+        margin-top: 60px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px; }
+
+#arch {
+  left: -5px; }
+
+.unit-holder {
+  z-index: 1;
+  position: absolute; }
+  .unit-holder .unit1 {
+    /* padding-top: 60px;*/
+    padding-top: 60px; }
+  .unit-holder .unit2 {
+    /*padding-top: 20px;*/
+    padding-top: 40px; }
+  .unit-holder .unit3 {
+    /*padding-top: 83px;*/
+    padding-top: 40px; }
+  .unit-holder .unit4 {
+    /*padding-top: 83px;*/
+    padding-top: 40px; }
+  .unit-holder .unit5 {
+    /*padding-top: 76px;*/
+    padding-top: 40px; }
+  .unit-holder .unit6 {
+    /*padding-top: 83px;*/
+    padding-top: 40px; }
+  .unit-holder .unit7 {
+    /*padding-top: 83px;*/
+    padding-top: 40px; }
+  .unit-holder .unit8 {
+    /*padding-top: 83px;*/
+    padding-top: 40px; }
+  .unit-holder .unit9 {
+    /*padding-top: 12px;*/
+    padding-top: 40px; }
+  .unit-holder .unit10 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit11 {
+    /*padding-top: 76px;*/
+    padding-top: 40px; }
+  .unit-holder .unit12 {
+    /*padding-top: 36px;*/
+    padding-top: 40px; }
+  .unit-holder .unit13 {
+    /*padding-top: 56px;*/
+    padding-top: 40px; }
+  .unit-holder .unit14 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit15 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit16 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit17 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit18 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit19 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit20 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit21 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit22 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit23 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit24 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit25 {
+    /*padding-top: 78px;*/
+    padding-top: 18px; }
+    .unit-holder .unit25 h2 {
+      font-size: 21px;
+      padding-top: 20px;
+      left: -47px;
+      top: 55px; }
+      .unit-holder .unit25 h2::after {
+        clear: both;
+        content: "";
+        display: table; }
+    .unit-holder .unit25 .sections {
+      top: 65px; }
+  .unit-holder .unit26 {
+    /*padding-top: 78px;*/
+    padding-top: 78px; }
+  .unit-holder .unit27 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit28 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit29 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit30 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit31 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit32 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit33 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit34 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+  .unit-holder .unit35 {
+    /*padding-top: 78px;*/
+    padding-top: 4px; }
+  .unit-holder .unit36 {
+    /*padding-top: 78px;*/
+    padding-top: 20px; }
+  .unit-holder .unit37 {
+    /*padding-top: 78px;*/
+    padding-top: 40px; }
+    .unit-holder .unit37 h2 {
+      font-size: 21px;
+      padding-top: 20px;
+      left: -47px;
+      top: 55px; }
+      .unit-holder .unit37 h2::after {
+        clear: both;
+        content: "";
+        display: table; }
+    .unit-holder .unit37 .sections {
+      top: 65px; }
+  .unit-holder .unit38 {
+    /*padding-top: 78px;*/
+    padding-top: 78px; }
+  .unit-holder .unit39 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit40 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit41 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/
+    /*h2 {
+      @include clearfix;
+      font-size: 21px;
+      /*padding-top: 20px;*/
+   /* left: -47px;
+    top: 55px;
+  }*/
+    /*.sections {
+      top: 65px;
+    }*/ }
+  .unit-holder .unit42 {
+    /*padding-top: 78px;*/
+    /*padding-top: 80px;*/ }
+  .unit-holder .unit43 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit44 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit45 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit46 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit47 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit48 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit49 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit50 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit51 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit52 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit53 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/
+    /*h2 {
+      @include clearfix;
+      font-size: 21px;
+      /*padding-top: 20px;*/
+  /*left: -47px;
+  top: 55px;
+}*/
+    /*.sections {
+      top: 65px;
+    }*/ }
+  .unit-holder .unit54 {
+    /*padding-top: 78px;*/
+    padding-top: 80px; }
+  .unit-holder .unit55 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit56 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit57 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit58 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit59 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit60 {
+    /*padding-top: 78px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit61 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit62 {
+    /*padding-top: 140px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit63 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit64 {
+    /*padding-top: 83px;*/
+    /*padding-top: 20px;*/ }
+  .unit-holder .unit65 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit66 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit67 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit68 {
+    /*padding-top: 78px;*/ }
+  .unit-holder .unit69 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit70 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit71 {
+    /*padding-top: 78px;*/ }
+  .unit-holder .unit72 {
+    /*padding-top: 78px;*/ }
+  .unit-holder .unit73 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit74 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit75 {
+    /*padding-top: 64px;*/ }
+  .unit-holder .unit76 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit77 {
+    /*padding-top: 78px;*/ }
+  .unit-holder .unit78 {
+    /*padding-top: 78px;*/ }
+  .unit-holder .unit79 {
+    /*padding-top: 78px;*/ }
+  .unit-holder .unit80 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit81 {
+    /*padding-top: 78px;*/ }
+  .unit-holder .unit82 {
+    /*padding-top: 83px;*/ }
+  .unit-holder .unit83 {
+    /*padding-top: 78px;*/ }
+    .unit-holder .unit83 h2 {
+      font-size: 21px;
+      padding-top: 20px;
+      left: -47px; }
+    .unit-holder .unit83 .sections {
+      top: 160px; }
+
+.dropdown-content {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  width: 900px;
+  height: 70px;
+  margin-left: -9px;
+  margin-top: 10px; }
+  .dropdown-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .dropdown-content h5 {
+    color: #A4C5A1;
+    text-decoration: none;
+    display: block; }
+    .dropdown-content h5::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .dropdown-content h4 {
+    margin-top: 12px;
+    color: white; }
+  .dropdown-content p {
+    color: #A4C5A1; }
+  .dropdown-content a {
+    text-align: center;
+    color: #A4C5A1; }
+    .dropdown-content a:hover {
+      color: #337ab7;
+      text-decoration: none; }
+
+footer {
+  display: inline-block;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  top: 3500px;
+  height: 40px;
+  background-color: #222;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px; }
+
+/*@media screen and (max-width: 750px) {
+  @import "nav_1px";  
+  @import "layout_1px";
+  @import "dropdown_1px";
+}*/
+
+/*# sourceMappingURL=style.css.map */
